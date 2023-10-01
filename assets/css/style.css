@@ -77,3 +77,14 @@ footer {
 color: white;
 }
 
+/* Media query for mobile devices (small screens: 320px — 480px) */
+@media screen and (max-width: 480px) {
+
+    /* To make sure that icons are not too large on mobiles */
+     
+    h2 {
+        font-size: 2rem;
+    }
+
+
+}
