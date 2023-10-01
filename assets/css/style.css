@@ -45,16 +45,33 @@ body {
     border-right: 2rem;
 }
 
+.options-area {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
 
+.buttons {
+    background-color: white;
+    color: black;
+    border: 3px solid #EB4E4E;
+    margin: 0.8rem;
+    font-size: 1rem;
+    padding: 0.7rem;
 
-.option-area {
+}
 
+.score-area {
+    font-weight: 500;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.9rem;
 }
 
 h2 {
-    font-size: 3rem;   
+    font-size: 3rem;  
+    padding: 1rem;
 }
-
 
 /* Footer */
 footer {
@@ -85,6 +102,5 @@ color: white;
     h2 {
         font-size: 2rem;
     }
-
 
 }
