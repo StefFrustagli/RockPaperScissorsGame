@@ -6,24 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Nobile:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-      rel="stylesheet"
-    />
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Rock, Paper, Scissors game</title>
   </head>
   <body>
     <div class="header">
-      <h2>How to play</h2>
-
-      <h2>Can you beat the machine?</h2>
+      <h3 id="how-to-play">How to play</h3>      
     </div>
-
     <main class="game-area">
+        <h2>Can you beat the machine?</h2>
       <div class="hands">
         <span id="player-one-hand">
           <i class="fa-solid fa-hand-fist"></i>
@@ -40,13 +37,16 @@
 
       <div class="score-area">
         <p class="scores">
-          Player 1 score: <span id="player-one-score">0</span>
+          Your score: <span id="player-one-score">0</span>
         </p>
         <p class="scores">PC score: <span id="pc-score">0</span></p>
       </div>
     </main>
 
-    <footer>git link</footer>
+    <footer>
+        <div id="github"> <a href="https://github.com/StefFrustagli" target="_blank" rel="noopener"
+                        aria-label="Visit my GitHub page (opens in a new tab)"><i class="fa-brands fa-github"></i></a> </div>
+    </footer>
 
     <!--Font Awesome kit-->
     <script
