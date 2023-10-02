@@ -47,13 +47,13 @@ body {
     animation: shake 0.8s linear;
 }
 
-#player-one-hand {
+.player-hand {
     font-size: 9rem;
     color: #55ad7a;
 
 }
 
-#pc-hand {
+.pc-hand {
     font-size: 9rem;
     color: #1e5d88;
 
@@ -63,6 +63,7 @@ body {
 .shakePlayer {
     animation: shakePlayer 0.9s linear;
 }
+
 .shakeComputer {
     animation: shakeComputer 0.9s linear;
 }
@@ -82,7 +83,7 @@ body {
 
 
 
-.options-area {
+.options {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
@@ -105,7 +106,7 @@ body {
 
 }
 
-/* Animation (thanks to Code Grind) */
+/* Animation for shaking hands (thanks to Code Grind) */
 @keyframes shakePlayer {
     0% {
         transform: rotate(-30deg);
@@ -153,12 +154,12 @@ body {
 }
 
 /* Score area */
-#player-score {
+.playerScore {
     color: #55ad7a;
 
 }
 
-#pc-score {
+.computerScore {
     color: #1e5d88;
 }
 
@@ -202,13 +203,13 @@ footer {
 /* Media query for mobile devices (small screens: 320px — 480px) */
 @media screen and (max-width: 480px) {
 
-    /* To make sure that icons are not too large on mobiles */
+    /* To make sure that hands and buttons fit on mobiles */
 
-    #player-one-hand {
+    .player-hand {
         font-size: 5rem;
     }
 
-    #pc-hand {
+    .pc-hand {
         font-size: 5rem;
     }
 
@@ -231,7 +232,7 @@ footer {
         border-right: 1rem;
     }
 
-    .options-area {
+    .options {
         margin: 0;
     }
 
