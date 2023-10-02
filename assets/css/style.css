@@ -37,6 +37,14 @@ body {
         padding: 1%;
 }
 
+#player-one-hand {
+    font-size: 9rem;
+}
+
+#pc-hand {
+    font-size: 9rem;
+}
+
 .hands {
     display: flex;
     justify-content: space-around;
@@ -49,6 +57,8 @@ body {
     border-left: 2rem;
     border-right: 2rem;
 }
+
+
 
 .options-area {
     margin-top: 2rem;
@@ -104,6 +114,46 @@ color: white;
 
     /* To make sure that icons are not too large on mobiles */
      
+#player-one-hand {
+        font-size: 5rem;
+    }
+
+    #pc-hand {
+        font-size: 5rem;
+    }
+
+    #button-rock, #button-paper {
+        margin-bottom: 0.5rem;
+    }
+
+    .hands {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        border-left: 1rem;
+        border-right: 1rem;
+    }
+
+   .options-area{
+    margin:0;
+    }
+
+    .buttons {
+    background-color: #d5d5d5;
+    color: #1e5d88;
+    border: 3px solid #1e5d88;
+    margin: 0.8rem;
+    font-size: 1rem;
+    padding: 0.5rem;
+    }
+
+
+
     h2 {
         font-size: 2rem;
     }
