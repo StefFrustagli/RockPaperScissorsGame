@@ -11,14 +11,14 @@ body {
     background-color: #334d5c;
     text-align: center;
     padding: 0.05rem;
-    
+
 }
 
 #how-to-play {
     color: white;
     padding-right: 1rem;
     font-size: 0.9rem;
-    
+
 }
 
 /* Game area */
@@ -28,23 +28,43 @@ body {
 }
 
 .game-area {
-        width: 85%;
-        height: 65vh;
-        max-height: 450px;
-        max-width: 830px;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 1%;
+    width: 85%;
+    height: 65vh;
+    max-height: 450px;
+    max-width: 830px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+}
+
+/* Shake hands animations */
+
+.shakeComputer {
+    animation: shake 0.8s linear;
+}
+
+.shakePlayer {
+    animation: shake 0.8s linear;
 }
 
 #player-one-hand {
     font-size: 9rem;
-    color:#55ad7a;
+    color: #55ad7a;
+
 }
 
 #pc-hand {
     font-size: 9rem;
     color: #1e5d88;
+
+}
+
+/* Hands shaking animations */
+.shakePlayer {
+    animation: shakePlayer 0.9s linear;
+}
+.shakeComputer {
+    animation: shakeComputer 0.9s linear;
 }
 
 .hands {
@@ -53,7 +73,7 @@ body {
     align-items: center;
     text-align: center;
     padding-bottom: 3rem;
-    padding-top: 2rem;
+    padding-t.op: 2rem;
     margin-left: 5rem;
     margin-right: 5rem;
     border-left: 2rem;
@@ -69,11 +89,66 @@ body {
 
 .buttons {
     background-color: #d5d5d5;
-    color: #1e5d88 ;
+    color: #1e5d88;
     border: 3px solid #1e5d88;
     margin: 0.8rem;
     font-size: 1rem;
     padding: 0.7rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.2s all linear;
+}
+
+.buttons:hover {
+    background-color: #55ad7a;
+    border: 3px solid #334d5c;
+
+}
+
+/* Animation (thanks to Code Grind) */
+@keyframes shakePlayer {
+    0% {
+        transform: rotate(-30deg);
+    }
+
+    25% {
+        transform: rotate(30deg);
+    }
+
+    50% {
+        transform: rotate(-30deg);
+    }
+
+    75% {
+        transform: rotate(30deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+
+}
+
+@keyframes shakeComputer {
+    0% {
+        transform: rotate(30deg);
+    }
+
+    25% {
+        transform: rotate(-30deg);
+    }
+
+    50% {
+        transform: rotate(30deg);
+    }
+
+    75% {
+        transform: rotate(-30deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
 
 }
 
@@ -84,10 +159,10 @@ body {
 }
 
 #pc-score {
-        color: #1e5d88;
-    }
-    
-.score-area  {
+    color: #1e5d88;
+}
+
+.score-area {
     color: #23292e;
     font-weight: 500;
     display: flex;
@@ -99,7 +174,7 @@ body {
 /* 'Can you beat the machine?' text */
 h2 {
     color: #23292e;
-    font-size: 3rem;  
+    font-size: 3rem;
     padding: 1rem;
 }
 
@@ -116,20 +191,20 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    
-   
+
+
 }
 
 .fa-github:before {
-color: white;
+    color: white;
 }
 
 /* Media query for mobile devices (small screens: 320px — 480px) */
 @media screen and (max-width: 480px) {
 
     /* To make sure that icons are not too large on mobiles */
-     
-#player-one-hand {
+
+    #player-one-hand {
         font-size: 5rem;
     }
 
@@ -137,7 +212,8 @@ color: white;
         font-size: 5rem;
     }
 
-    #button-rock, #button-paper {
+    #button-rock,
+    #button-paper {
         margin-bottom: 0.5rem;
     }
 
@@ -155,17 +231,17 @@ color: white;
         border-right: 1rem;
     }
 
-   .options-area{
-    margin:0;
+    .options-area {
+        margin: 0;
     }
 
     .buttons {
-    background-color: #d5d5d5;
-    color: #1e5d88;
-    border: 3px solid #1e5d88;
-    margin: 0.8rem;
-    font-size: 1rem;
-    padding: 0.5rem;
+        background-color: #d5d5d5;
+        color: #1e5d88;
+        border: 3px solid #1e5d88;
+        margin: 0.8rem;
+        font-size: 1rem;
+        padding: 0.5rem;
     }
 
     .score-area {
@@ -174,7 +250,7 @@ color: white;
     }
 
 
-    h2 { 
+    h2 {
         margin-bottom: 0;
         margin-top: 1rem;
         font-size: 2rem;
