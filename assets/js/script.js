@@ -14,11 +14,10 @@ options.forEach((option) => {
         computer.classList.add('shakeComputer');
         //hand to shake when button is clicked 
 
-        //remove classes to make sure
+        //remove classes to make hands shaking without reload the page
         setTimeout(() => {
-            computer.classList.remove('shakePlayer');
+            player.classList.remove('shakePlayer');
             computer.classList.remove('shakeComputer');
-
         }, 900);
     });
 });
