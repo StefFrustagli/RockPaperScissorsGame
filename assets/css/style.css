@@ -39,10 +39,12 @@ body {
 
 #player-one-hand {
     font-size: 9rem;
+    color:#55ad7a;
 }
 
 #pc-hand {
     font-size: 9rem;
+    color: #1e5d88;
 }
 
 .hands {
@@ -75,7 +77,18 @@ body {
 
 }
 
-.score-area {
+/* Score area */
+#player-score {
+    color: #55ad7a;
+
+}
+
+#pc-score {
+        color: #1e5d88;
+    }
+    
+.score-area  {
+    color: #23292e;
     font-weight: 500;
     display: flex;
     justify-content: space-around;
@@ -83,7 +96,9 @@ body {
     font-size: 0.9rem;
 }
 
+/* 'Can you beat the machine?' text */
 h2 {
+    color: #23292e;
     font-size: 3rem;  
     padding: 1rem;
 }
@@ -135,6 +150,7 @@ color: white;
         padding-top: 1rem;
         margin-left: 1rem;
         margin-right: 1rem;
+        margin-top: 0.5rem;
         border-left: 1rem;
         border-right: 1rem;
     }
@@ -152,9 +168,15 @@ color: white;
     padding: 0.5rem;
     }
 
+    .score-area {
+        display: flex;
+
+    }
 
 
-    h2 {
+    h2 { 
+        margin-bottom: 0;
+        margin-top: 1rem;
         font-size: 2rem;
     }
 
