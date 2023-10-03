@@ -6,72 +6,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Rock, Paper, Scissors game</title>
   </head>
   <body>
     <div class="header">
-      <h3 id="how-to-play">How to play</h3>      
+      <h3 id="how-to-play">How to play</h3>
     </div>
     <main class="game-area">
-        <h2>Can you beat the machine?</h2>
+      <h2>Can you beat the machine?</h2>
       <div class="hands">
         <span class="player-hand">
-            <i class="fa-solid fa-hand-fist fa-rotate-90"></i>
-        </span> 
+          <i class="fa-solid fa-hand-fist fa-rotate-90"></i>
+        </span>
         <span class="pc-hand">
           <i class="fa-solid fa-hand-fist fa-rotate-270"></i>
         </span>
         <!-- Hidden hands icons -->
-       <div class="hidden-hands-player">
-           <span class="player-hand-rock">
+        <div class="hidden-hands-player">
+          <span class="player-hand-rock">
             <i class="fa-solid fa-hand-back-fist"></i>
-           </span> 
-           <span class="player-hand-paper">
+          </span>
+          <span class="player-hand-paper">
             <i class="fa-solid fa-hand"></i>
-           </span> 
-           <span id="player-scissors" class="player-hand-scissors">
-            <i class="fa-solid fa-hand-scissors"></i>
-           </span> 
-       </div>
+          </span>
+        </div>
         <div class="hidden-hands-computer">
-           <span class="computer-hand-rock">
+          <span class="computer-hand-rock">
             <i class="fa-solid fa-hand-back-fist"></i>
-          </span> 
+          </span>
           <span class="computer-hand-paper">
             <i class="fa-solid fa-hand"></i>
-          </span> 
-          <span id="computer-scissors" class="computer-hand-scissors">
+          </span>
+        </div>
+        <div class="hidden-hand-scissors-player">
+          <span class="player-hand-scissors">
             <i class="fa-solid fa-hand-scissors"></i>
           </span>
         </div>
+<div class="hidden-hand-scissors-computer">
+    <span class="computer-hand-scissors">
+    <i class="fa-solid fa-hand-scissors"></i>
+    </span>
+</div>
 
       </div>
       <div class="options">
         <button type="button" class="buttons" id="button-rock">Rock</button>
         <button type="button" class="buttons" id="button-paper">Paper</button>
-        <button type="button" class="buttons" id="button-scissors">Scissors</button>
+        <button type="button" class="buttons" id="button-scissors">
+          Scissors
+        </button>
       </div>
 
       <div class="score-area">
         <p class="scores">
-          Your score: 
-        <span class="playerScore">0</span>
+          Your score:
+          <span class="playerScore">0</span>
         </p>
-        <p class="scores">PC score: 
-          <span class="computerScore">0</span></p>
+        <p class="scores">PC score: <span class="computerScore">0</span></p>
       </div>
     </main>
 
     <footer>
-        <div id="github"> <a href="https://github.com/StefFrustagli" target="_blank" rel="noopener"
-                        aria-label="Visit my GitHub page (opens in a new tab)"><i class="fa-brands fa-github"></i></a> </div>
+      <div id="github">
+        <a
+          href="https://github.com/StefFrustagli"
+          target="_blank"
+          rel="noopener"
+          aria-label="Visit my GitHub page (opens in a new tab)"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+      </div>
     </footer>
 
     <!--Font Awesome kit-->
