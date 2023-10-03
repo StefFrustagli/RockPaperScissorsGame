@@ -7,17 +7,17 @@ let computerScore = document.querySelector('.computerScore');
 
 let options = document.querySelectorAll('.options .buttons'); // all the 3 buttons
 
-// run function for each loop using arrow function
+// run hands shake function for each loop using arrow function
 options.forEach((option) => {
     option.addEventListener('click', () => {
         player.classList.add('shakePlayer');
         computer.classList.add('shakeComputer');
-        //hand to shake when button is clicked 
+        //hand shakes when button is clicked 
 
-        //remove classes to make hands shaking without reload the page
+        //remove classes so that hands shake each time the button is clicled - no need to reload the page
         setTimeout(() => {
             player.classList.remove('shakePlayer');
             computer.classList.remove('shakeComputer');
-        }, 900);
+        }, 1000);
     });
 });
