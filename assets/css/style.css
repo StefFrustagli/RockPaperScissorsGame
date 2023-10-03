@@ -74,14 +74,29 @@ body {
     align-items: center;
     text-align: center;
     padding-bottom: 3rem;
-    padding-t.op: 2rem;
+    padding-top: 2rem;
     margin-left: 5rem;
     margin-right: 5rem;
     border-left: 2rem;
     border-right: 2rem;
 }
 
+/* Other hands icons (hidden in HTML) */
+.hidden-hands-player {
+    display: none !important;
+    transform: rotate(90deg);
+    
+}
 
+
+.hidden-hands-computer {
+    /*display: none !important;*/
+    transform: rotate(270deg);
+}
+
+
+
+/* Options */
 
 .options {
     margin-top: 2rem;
