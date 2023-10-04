@@ -27,87 +27,89 @@ let scissors_button = document.getElementById('button-scissors');
 // game function
 function game(userChoice) {
     return userChoice;
-    //console.log(userChoice);
-    
+
 }
 
-// addEventListener for each button (when button is clicked, player's hand has to change)
+// EVENT LISTENER for each button (when button is clicked, player's hand has to change)
 
-rock_button.addEventListener('click', function(){
-   player.classList.add('player-hand-rock');
-})
-
-        
-        
+rock_button.addEventListener('click', function () {
+    player.classList.replace('player-hand', 'player-hand-rock');
     
-    //console.log('hey, you cliked on rock!'); //console.log to see if it works
+  
+});
 
-
-paper_button.addEventListener('click', function (){
+paper_button.addEventListener('click', function () {
     game('paper');
-    //console.log('hey, you cliked on paper!'); //console.log to see if it works
-})
 
-scissors_button.addEventListener('click', function (){
+});
+
+scissors_button.addEventListener('click', function () {
     game('scissors');
-   //console.log('hey, you cliked on scissors!'); //console.log to see if it works
-})
+    
+});
 
 
-// Run hands shaking frunction for each loop using arrow function
+
+
+
+
+// Hands shaking frunction for each loop using arrow function
 options.forEach((option) => {
     option.addEventListener('click', () => {
         player.classList.add('shakePlayer');
         computer.classList.add('shakeComputer');
-        // Hands shake when button is clicked 
 
         // Remove classes so that hands shake each time the button is clicled - no need to reload the page
         setTimeout(() => {
             player.classList.remove('shakePlayer');
             computer.classList.remove('shakeComputer');
 
-        
+
             // Make Player's hand to change depending on the button clicked
             // NEED TO ADD IT
 
-            // Make computer's hand to change randomly
-            /*let randomChoice = ["Rock", "Paper", "Scissors"];
-            let arrayNo = Math.floor(Math.random() * randomChoice.length);
-            let ComputerChoice = choice[arrayNo]; */
-            // PC should change image here
-            //NEED TO ADD IT
             
+            // Funtion for computer random choice
+            function getComputerChoice() {
+                let choice = ['button-rock', 'button-paper', 'button-scissors'];
+                let randomNumber = Math.floor(Math.random() * 3); //making sure it can select 0, 1 or 2
+                return choices[randomNumber];
+            }
+            
+            
+            
+
 
             // Variables for Points
             let pcPoints = parseInt(computerScore.innerHTML);
             let playerPoints = parseInt(playerScore.innerHTML);
 
             // Conditions
-            if(options.innerHTML==="Rock") {
-                if(computerChoice==="Paper") // Point goes to computer
-                computerScore.innerHTML = pcPoints + 1;
+            if (options.innerHTML === "Rock") {
+                if (computerChoice === "Paper") // Point goes to computer
+                    computerScore.innerHTML = pcPoints + 1;
                 else if (computerChoice === "Scissors") // Point go to player
-                playerScore.innerHTML = playerPoints + 1;
+                    playerScore.innerHTML = playerPoints + 1;
             } else if (options.innerHTML === "Paper") {
                 if (computerChoice === "Stone") // Point goes to player
                     playerScore.innerHTML = playerPoints + 1;
                 else if (computerChoice === "Scissors") // Point go to computer
                     computerScore.innerHTML = pcPoints + 1;
-                } else {
-                    if (options.innerHTML==="Scissors") {
-                        if (computerChoice === "Stone") // Point goes to computer
-                    computerScore.innerHTML = pcPoints + 1;
-                else if (computerChoice === "Paper") // Point go to player
-                    playerScore.innerHTML = playerPoints + 1;
-                    }
-
-                
+            } else {
+                if (options.innerHTML === "Scissors") {
+                    if (computerChoice === "Stone") // Point goes to computer
+                        computerScore.innerHTML = pcPoints + 1;
+                    else if (computerChoice === "Paper") // Point go to player
+                        playerScore.innerHTML = playerPoints + 1;
                 }
+
+
+            }
 
         }, 1000); // Make movement smoother
 
-        
-        
+
+
 
 
 

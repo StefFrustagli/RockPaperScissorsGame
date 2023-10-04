@@ -82,10 +82,15 @@ body {
 }
 
 /* Other hands icons (hidden in HTML) */
+
+.hide {
+    display: none !important;
+
+}
+
 .hidden-hands-player {
     font-size: 9rem;
     color: #55ad7a;
-    display: none !important;
     transform: rotate(90deg);
 
 }
@@ -93,7 +98,6 @@ body {
 .hidden-hands-computer {
     font-size: 9rem;
     color: #1e5d88;
-    display: none !important;
     transform: rotate(270deg);
 }
 
@@ -101,13 +105,11 @@ body {
     transform: rotateY(180deg);
     font-size: 9rem;
     color: #55ad7a;
-    display: none !important;
 }
 
-.hidden-hand-scissors-computer{
+.hidden-hand-scissors-computer {
     font-size: 9rem;
     color: #1e5d88;
-    display: none !important;
 
 }
 
