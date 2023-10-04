@@ -20,8 +20,41 @@ let scoreArea_div = document.querySelector('.score-area');
 
 // Variables for buttons/options
 let options = document.querySelectorAll('.options .buttons'); // all the 3 buttons
+let rock_button = document.getElementById('button-rock');
+let paper_button = document.getElementById('button-paper');
+let scissors_button = document.getElementById('button-scissors');
 
-// Run hands shaking function for each loop using arrow function
+// game function
+function game(userChoice) {
+    return userChoice;
+    //console.log(userChoice);
+    
+}
+
+// addEventListener for each button (when button is clicked, player's hand has to change)
+
+rock_button.addEventListener('click', function(){
+   player.classList.add('player-hand-rock');
+})
+
+        
+        
+    
+    //console.log('hey, you cliked on rock!'); //console.log to see if it works
+
+
+paper_button.addEventListener('click', function (){
+    game('paper');
+    //console.log('hey, you cliked on paper!'); //console.log to see if it works
+})
+
+scissors_button.addEventListener('click', function (){
+    game('scissors');
+   //console.log('hey, you cliked on scissors!'); //console.log to see if it works
+})
+
+
+// Run hands shaking frunction for each loop using arrow function
 options.forEach((option) => {
     option.addEventListener('click', () => {
         player.classList.add('shakePlayer');
