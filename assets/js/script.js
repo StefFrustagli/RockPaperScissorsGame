@@ -34,6 +34,7 @@ function game(userChoice) {
 
 rock_button.addEventListener('click', function () {
     player.classList.replace('player-hand', 'player-hand-rock');
+    player.classList.remove('hide');
     
   
 });

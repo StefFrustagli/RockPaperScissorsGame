@@ -186,15 +186,15 @@ body {
 }
 
 /* Score area */
-.playerScore {
+
+#player-score {
     color: #55ad7a;
 
 }
 
-.computerScore {
+#computer-score {
     color: #1e5d88;
 }
-
 .score-area {
     color: #23292e;
     font-weight: 500;
@@ -203,6 +203,7 @@ body {
     align-items: center;
     font-size: 0.9rem;
 }
+
 
 /* 'Can you beat the machine?' text */
 h2 {
@@ -480,6 +481,7 @@ footer {
     .score-area {
         display: flex;
 
+    
     }
 
 
