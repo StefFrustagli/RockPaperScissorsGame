@@ -26,13 +26,21 @@ options.forEach((option) => {
     option.addEventListener("click", () => {
         player.classList.add("shakePlayer");
         computer.classList.add("shakeComputer");
-        // Remove classes to make hands shake everytime button is clicled
+        
+        // Delay for shaking animation
         setTimeout(() => {
             player.classList.remove("shakePlayer");
             computer.classList.remove("shakeComputer");
+        
+            // After the shaking animation, update the hands
+            setTimeout(() => {
+                playComputerTurn();
+            }, 100); // Delay for updating the hands
 
-            playComputerTurn();
-            // getComputerChoice();
+            
+        }, 900); // Make movement smooth
+    });
+});
 
 
             // Function computer random choice
@@ -61,10 +69,6 @@ options.forEach((option) => {
             }
 
 
-
-        }, 800); // Make movement smoother
-    });
-});
 
 // EVENT LISTENER for each button (when button is clicked, player's hand has to change)
 rockButton.addEventListener("click", function () {
