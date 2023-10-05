@@ -37,25 +37,25 @@ options.forEach((option) => {
 
             // Function computer random choice
             function getComputerChoice() {
-                const choice = ["computer-rock", "computer-paper", "computer-scissors"]; // computer's hands IDs
+                const choices = ["computer-rock", "computer-paper", "computer-scissors"]; // computer's hands IDs
                 let randomNumber = Math.floor(Math.random() * 3); //making sure only 0, 1 or 2 can be selected
-                let computerChoice = choice[randomNumber];
+                let computerChoice = choices[randomNumber];
                 console.log(computerChoice);
-                return computerChoice[randomNumber];
+                return computerChoice;
             }
 
             // Function computer turn
             function playComputerTurn() {
-                let computerChoice = getComputerChoice();
+                const computerChoice = getComputerChoice();
 
-                let icon = computer.firstElementChild;
-                icon.classList.remove("fa-hand-fist");
+                const icon = computer.firstElementChild;
+                icon.classList.remove("fa-hand-fist", "fa-hand-back-fist", "fa-hand-scissors");
 
-                if (computerChoice == "computer-rock") {
+                if (computerChoice === "computer-rock") {
                     icon.classList.add("fa-hand-back-fist");
-                } else if (computerChoice == "computer-paper") {
+                } else if (computerChoice === "computer-paper") {
                     icon.classList.add("fa-hand");
-                } else {
+                } else if (computerChoice === "computer-scissors") {
                     icon.classList.add("fa-hand-scissors");
                 }
             }
