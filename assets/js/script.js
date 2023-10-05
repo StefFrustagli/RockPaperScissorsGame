@@ -21,7 +21,9 @@ let computerHandRock = document.querySelector(".computer-hand-rock");
 let computerHandPaper = document.querySelector(".computer-hand-paper");
 let computerHandScissors = document.querySelector(".computer-hand-scissors");
 
-// Hands shaking function for each loop using arrow function
+
+//Hands shaking function for each loop using arrow function
+
 options.forEach((option) => {
     option.addEventListener("click", () => {
         player.classList.add("shakePlayer");
@@ -43,8 +45,9 @@ options.forEach((option) => {
 });
 
 
-            // Function computer random choice
-            function getComputerChoice() {
+
+ // Function computer random choice
+        function getComputerChoice() {
                 const choices = ["computer-rock", "computer-paper", "computer-scissors"]; // computer's hands IDs
                 let randomNumber = Math.floor(Math.random() * 3); //making sure only 0, 1 or 2 can be selected
                 let computerChoice = choices[randomNumber];
@@ -69,6 +72,13 @@ options.forEach((option) => {
             }
 
 
+// Function to update the player's hand
+function updatePlayerHand(handType) {
+    let icon = player.firstElementChild;
+    icon.classList.remove("fa-hand-fist", "fa-hand-back-fist", "fa-hand-scissors");
+    icon.classList.add(handType);
+}
+
 
 // EVENT LISTENER for each button (when button is clicked, player's hand has to change)
 rockButton.addEventListener("click", function () {
@@ -77,10 +87,6 @@ rockButton.addEventListener("click", function () {
     icon.classList.remove("fa-hand-fist");
     removeIcons(icon);
     icon.classList.add("fa-hand-back-fist");
-
-    /* Computer turn
-    playComputerTurn(); 
-    getComputerChoice(); */
 
 });
 
@@ -93,9 +99,6 @@ paperButton.addEventListener("click", function () {
     icon.classList.add("fa-hand");
     removeRotation(icon);
 
-    /* Computer turn
-    playComputerTurn(); 
-    getComputerChoice(); */
 });
 
 scissorsButton.addEventListener("click", function () {
@@ -108,9 +111,6 @@ scissorsButton.addEventListener("click", function () {
 
     removeRotation(icon);
 
-    /* Computer turn
-    playComputerTurn(); 
-    getComputerChoice(); */
 });
 
 // Function to make sure classes don't get added to each others and buttons run correctly
@@ -141,32 +141,6 @@ function removeRotation(icon) {
     }
 }
 
-
-
-
-/* Function computer random choice
-function getComputerChoice() {
-    const choice = ["button-rock", "button-paper", "button-scissors"];
-    let randomNumber = Math.floor(Math.random() * 3); //making sure it can select 0, 1 or 2 only
-    let computerChoice = choice[randomNumber];
-    return choice[randomNumber];
-} 
-
-// Function computer turn
-function playComputerTurn() {
-    let computerChoice = getComputerChoice();
-
-    let icon = computer.firstElementChild;
-    icon.classList.remove("fa-hand-fist");
-
-    if (computerChoice == "rock") {
-        icon.classList.add("fa-hand-back-fist");
-    } else if (computerChoice == "paper") {
-        icon.classList.add("fa-hand");
-    } else {
-        icon.classList.add("fa-hand-scissors");
-    }
-} */
 
 
 

@@ -1,5 +1,4 @@
 /* Global style and background colour */
-
 body {
     background-color: #d5d5d5;
     font-family: 'Roboto Mono', monospace;
@@ -23,10 +22,6 @@ body {
 
 /* Game area */
 
-.class-hand {
-    font-size: 90%;
-}
-
 .game-area {
     width: 85%;
     height: 65vh;
@@ -37,25 +32,45 @@ body {
     padding: 1%;
 }
 
-/* Shake hands animations */
+/* Hands */
 
-.shakeComputer {
-    animation: shake 0.8s linear;
+#computer-scissors {
+    transform: rotateY(180deg);
 }
 
-.shakePlayer {
-    animation: shake 0.8s linear;
+.class-hand {
+    font-size: 90%;
 }
 
 .player-hand {
     font-size: 9rem;
     color: #55ad7a;
-    
+    transform: rotate(90deg);
+    /* Always face the specified direction */
 
 }
 
+.player-hand-rock {
+    font-size: 9rem;
+    color: #55ad7a;
+    transform: rotate(90deg);
+}
+
+.player-hand-paper {
+    font-size: 9rem;
+    color: #55ad7a;
+    transform: rotate(90deg);
+}
+
+.player-hand-scissors {
+    font-size: 9rem;
+    color: #55ad7a;
+    transform: rotate(90deg) scale(-1, 1);
+    /* Flip horizontally for scissors */
+}
+
 .rotate-90 {
-transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 
 .pc-hand {
@@ -64,13 +79,10 @@ transform: rotate(90deg);
 
 }
 
-/* Hands shaking animations */
-.shakePlayer {
-    animation: shakePlayer 0.9s linear;
-}
 
-.shakeComputer {
-    animation: shakeComputer 0.9s linear;
+/* Shake hands animations */
+.shakePlayer, .shakeComputer  {
+    animation: shakePlayer 0.9s linear;
 }
 
 .hands {
@@ -148,6 +160,7 @@ transform: rotate(90deg);
 }
 
 /* Animation for shaking hands (thanks to Code Grind) */
+/* Shake player's hand */
 @keyframes shakePlayer {
     0% {
         transform: rotate(-30deg);
@@ -171,6 +184,7 @@ transform: rotate(90deg);
 
 }
 
+/* Shake computer's hand */
 @keyframes shakeComputer {
     0% {
         transform: rotate(30deg);
@@ -215,7 +229,7 @@ transform: rotate(90deg);
 }
 
 
-/* 'Can you beat the machine?' text */
+/* Text: 'Can you beat the machine?'*/
 h2 {
     color: #23292e;
     font-size: 3rem;
@@ -228,7 +242,6 @@ footer {
     text-align: center;
     bottom: 0;
     width: 100%;
-    /* Height of the footer */
     height: 1.5rem;
     position: fixed;
     z-index: 99;
@@ -236,7 +249,7 @@ footer {
     left: 0;
     right: 0;
 }
-
+/* GitHub icon */
 .fa-github:before {
     color: white;
 }
@@ -288,210 +301,6 @@ footer {
 
     .score-area {
         display: flex;
-
-    }
-
-
-    h2 {
-        margin-bottom: 0;
-        margin-top: 1rem;
-        font-size: 2rem;
-    }
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-display: none !important;
-transform: rotate(270deg);
-}
-
-#computer-scissors {
-    transform: rotateY(180deg);
-}
-
-/* Options */
-
-.options {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-
-.buttons {
-    background-color: #d5d5d5;
-    color: #1e5d88;
-    border: 3px solid #1e5d88;
-    margin: 0.8rem;
-    font-size: 1rem;
-    padding: 0.7rem;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    transition: 0.2s all linear;
-}
-
-.buttons:hover {
-    background-color: #55ad7a;
-    border: 3px solid #334d5c;
-
-}
-
-/* Animation for shaking hands (thanks to Code Grind) */
-@keyframes shakePlayer {
-    0% {
-        transform: rotate(-30deg);
-    }
-
-    25% {
-        transform: rotate(30deg);
-    }
-
-    50% {
-        transform: rotate(-30deg);
-    }
-
-    75% {
-        transform: rotate(30deg);
-    }
-
-    100% {
-        transform: rotate(0deg);
-    }
-
-}
-
-@keyframes shakeComputer {
-    0% {
-        transform: rotate(30deg);
-    }
-
-    25% {
-        transform: rotate(-30deg);
-    }
-
-    50% {
-        transform: rotate(30deg);
-    }
-
-    75% {
-        transform: rotate(-30deg);
-    }
-
-    100% {
-        transform: rotate(0deg);
-    }
-
-}
-
-/* Score area */
-.playerScore {
-    color: #55ad7a;
-
-}
-
-.computerScore {
-    color: #1e5d88;
-}
-
-.score-area {
-    color: #23292e;
-    font-weight: 500;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 0.9rem;
-}
-
-/* 'Can you beat the machine?' text */
-h2 {
-    color: #23292e;
-    font-size: 3rem;
-    padding: 1rem;
-}
-
-/* Footer */
-footer {
-    background-color: #334d5c;
-    text-align: center;
-    bottom: 0;
-    width: 100%;
-    /* Height of the footer */
-    height: 1.5rem;
-    position: fixed;
-    z-index: 99;
-    bottom: 0;
-    left: 0;
-    right: 0;
-
-
-}
-
-.fa-github:before {
-    color: white;
-}
-
-/* Media query for mobile devices (small screens: 320px — 480px) */
-@media screen and (max-width: 480px) {
-
-    /* To make sure that hands and buttons fit on mobiles */
-
-    .player-hand {
-        font-size: 5rem;
-    }
-
-    .pc-hand {
-        font-size: 5rem;
-    }
-
-    #button-rock,
-    #button-paper {
-        margin-bottom: 0.5rem;
-    }
-
-    .hands {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        text-align: center;
-        padding-bottom: 1rem;
-        padding-top: 1rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
-        margin-top: 0.5rem;
-        border-left: 1rem;
-        border-right: 1rem;
-    }
-
-    .options {
-        margin: 0;
-    }
-
-    .buttons {
-        background-color: #d5d5d5;
-        color: #1e5d88;
-        border: 3px solid #1e5d88;
-        margin: 0.8rem;
-        font-size: 1rem;
-        padding: 0.5rem;
-    }
-
-    .score-area {
-        display: flex;
-
-
     }
 
 
