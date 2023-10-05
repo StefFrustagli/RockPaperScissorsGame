@@ -50,7 +50,12 @@ body {
 .player-hand {
     font-size: 9rem;
     color: #55ad7a;
+    
 
+}
+
+.rotate-90 {
+transform: rotate(90deg);
 }
 
 .pc-hand {
@@ -102,9 +107,13 @@ body {
 }
 
 .hidden-hand-scissors-player {
-    transform: rotateY(180deg);
     font-size: 9rem;
     color: #55ad7a;
+    /*transform: rotateY(180deg);*/
+}
+
+.transform {
+    transform: rotateY(180deg);
 }
 
 .hidden-hand-scissors-computer {
@@ -195,6 +204,7 @@ body {
 #computer-score {
     color: #1e5d88;
 }
+
 .score-area {
     color: #23292e;
     font-weight: 500;
@@ -481,7 +491,7 @@ footer {
     .score-area {
         display: flex;
 
-    
+
     }
 
 

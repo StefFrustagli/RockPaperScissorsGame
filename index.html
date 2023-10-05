@@ -22,43 +22,46 @@
     </div>
     <main class="game-area">
       <h2>Can you beat the machine?</h2>
-      <div class="hands">
+      <section class="hands">
         <!--Default hands icons-->
-        <span id= "default-player-hand" class="player-hand">
-          <i class="fa-solid fa-hand-fist fa-rotate-90"></i>
+        <span id="default-player-hand" class="player-hand rotate-90">
+          <i class="fa-solid fa-hand-fist"></i>
         </span>
-        <span id= "default-computer-hand" class="pc-hand">
+        <span id="default-computer-hand" class="pc-hand">
           <i class="fa-solid fa-hand-fist fa-rotate-270"></i>
         </span>
         <!-- Hidden hands icons -->
-        <div class="hidden-hands-player hide">
+        <section class="hidden-hands-player hide">
           <span class="player-hand-rock">
             <i class="fa-solid fa-hand-back-fist"></i>
           </span>
           <span class="player-hand-paper">
             <i class="fa-solid fa-hand"></i>
           </span>
-        </div>
-        <div class="hidden-hands-computer hide">
-          <span class="computer-hand-rock">
+        </section>
+        <section class="hidden-hands-computer hide">
+          <span class="computer-hand-rock" id="computer-rock">
             <i class="fa-solid fa-hand-back-fist"></i>
           </span>
-          <span class="computer-hand-paper">
+          <span class="computer-hand-paper" id="computer-paper">
             <i class="fa-solid fa-hand"></i>
           </span>
-        </div>
-        <div class="hidden-hand-scissors-player hide">
-          <span class="player-hand-scissors">
-            <i class="fa-solid fa-hand-scissors"></i>
-          </span>
-        </div>
-        <div class="hidden-hand-scissors-computer hide">
-         <span class="computer-hand-scissors">
-         <i class="fa-solid fa-hand-scissors"></i>
-         </span>
-      </div>
-<!-- Options area-->
-      </div>
+        </section>
+        <!-- Scissors hands -->
+        <section class="hidden-hand-scissors-player transform hide">
+            <span class="player-hand-scissors">
+                <i class="fa-solid fa-hand-scissors"></i>
+            </span>
+        </section>
+        <section class="hidden-hand-scissors-computer hide">
+            <span class="computer-hand-scissors" id="computer-scissors">
+                <i class="fa-solid fa-hand-scissors"></i>
+            </span>
+        </section>
+      </section>
+
+      <!-- Options area-->
+
       <div class="options">
         <button type="button" class="buttons" id="button-rock">Rock</button>
         <button type="button" class="buttons" id="button-paper">Paper</button>
@@ -66,13 +69,14 @@
           Scissors
         </button>
       </div>
-<!-- Scores area-->
+      <!-- Scores area-->
       <div class="score-area">
         <p class="scores">
           Your score:
           <span id="player-score">0</span>
         </p>
-        <p class="scores">PC score: 
+        <p class="scores">
+          PC score:
           <span id="computer-score">0</span>
         </p>
       </div>
@@ -99,3 +103,5 @@
     <script src="assets/js/script.js"></script>
   </body>
 </html>
+
+
