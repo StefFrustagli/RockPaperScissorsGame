@@ -48,9 +48,9 @@ body {
 
 /* Hands */
 
-#computer-scissors {
+/*#computer-scissors {
     transform: rotateY(180deg);
-}
+}*/
 
 .class-hand {
     font-size: 90%;
@@ -133,7 +133,7 @@ body {
 .hidden-hands-computer {
     font-size: 9rem;
     color: #1e5d88;
-    transform: rotate(270deg);
+    /*transform: rotate(270deg);*/
 }
 
 .hidden-hand-scissors-player {
@@ -148,10 +148,11 @@ body {
 
 .hidden-hand-scissors-computer {
     font-size: 9rem;
-    color: #1e5d88;
+    color: #1e5d88; 
 
 
 }
+
 
 
 /* Options */

@@ -1,5 +1,3 @@
-const { default: Swal } = require('sweetalert2');
-
 // Variables for default hands
 let player = document.querySelector(".player-hand"); // store player hand default icon
 let computer = document.querySelector(".pc-hand"); // store pc hand default icon
@@ -24,14 +22,12 @@ let playerScore_span = document.getElementById("player-score"); // variables wit
 let computerScore_span = document.getElementById("computer-score");
 let scoreArea_div = document.querySelector(".score-area");
 
-// How to play - SweetAlert
+
+// Instructions game - SweetAlert??
 document.getElementById('how-to-play').addEventListener('click', function(){
-    Swal.fire('Ciao');
-}
 
-)
-
-
+    
+});
 
 //  Make sure the machine recognise the choices
 const choiceMapping = {
@@ -140,7 +136,7 @@ paperButton.addEventListener("click", function () {
     removeIcons(icon);
 
     icon.classList.add("fa-hand");
-    // removeRotation(icon);
+    removeRotation(icon);
 });
 
 scissorsButton.addEventListener("click", function () {
@@ -152,7 +148,7 @@ scissorsButton.addEventListener("click", function () {
     icon.classList.add("fa-hand-scissors");
     icon.classList.add("transform");
 
-    removeRotation(icon);
+   removeRotation(icon);
 });
 
 // Function to make sure classes don't get added to each others and buttons run correctly
@@ -218,3 +214,24 @@ function determineWinner(playerChoice, computerChoice) {
     return "Computer";
     }
 }
+
+// Function to reset score
+
+function resetScore() {
+        playerScore = 0;
+        computerScore = 0;
+        updateScore(playerScore, computerScore);
+    }
+
+    // Check if the player or computer score has reached 10
+    if (playerScore === 10 || computerScore === 10) {
+        // If either player or computer score reaches 10, reset both scores to 0
+        
+        playerScore = 0;
+        computerScore = 0;
+        alert("Scores have been reset!");
+        resetScore();
+    }
+
+
+
