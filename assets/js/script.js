@@ -1,3 +1,5 @@
+const { default: Swal } = require('sweetalert2');
+
 // Variables for default hands
 let player = document.querySelector(".player-hand"); // store player hand default icon
 let computer = document.querySelector(".pc-hand"); // store pc hand default icon
@@ -22,6 +24,15 @@ let playerScore_span = document.getElementById("player-score"); // variables wit
 let computerScore_span = document.getElementById("computer-score");
 let scoreArea_div = document.querySelector(".score-area");
 
+// How to play - SweetAlert
+document.getElementById('how-to-play').addEventListener('click', function(){
+    Swal.fire('Ciao');
+}
+
+)
+
+
+
 //  Make sure the machine recognise the choices
 const choiceMapping = {
     "fa-hand-back-fist": "rock",
@@ -30,7 +41,6 @@ const choiceMapping = {
 };
 
 //Arrow function for hands shaking
-
 options.forEach((option) => {
     option.addEventListener("click", () => {
         player.classList.add("shakePlayer");
@@ -51,8 +61,8 @@ options.forEach((option) => {
 
 // Function computer random choice
 function getComputerChoice() {
-    const choices = ["rock", "paper", "scissors"]; // they were computer's hands IDs, now changed into "rock" paper, scissors
-    let randomNumber = Math.floor(Math.random() * 3); //making sure only 0, 1 or 2 can be selected
+    const choices = ["rock", "paper", "scissors"]; // they were computer's hands IDs, now changed into "rock" "paper", "scissors" to fix issue with score
+    let randomNumber = Math.floor(Math.random() * 3); // making sure only 0, 1 or 2 can be selected
     let computerChoice = choices[randomNumber];
     console.log(computerChoice);
     return computerChoice;
@@ -113,7 +123,7 @@ function updatePlayerHand(handType) {
     );
     icon.classList.add(handType);
 }
-
+console.log(updatePlayerHand);
 // Event listener for each button (when button is clicked, player's hand changes)
 rockButton.addEventListener("click", function () {
     let icon = player.firstElementChild;
@@ -130,7 +140,7 @@ paperButton.addEventListener("click", function () {
     removeIcons(icon);
 
     icon.classList.add("fa-hand");
-    removeRotation(icon);
+    // removeRotation(icon);
 });
 
 scissorsButton.addEventListener("click", function () {
@@ -138,6 +148,7 @@ scissorsButton.addEventListener("click", function () {
 
     icon.classList.remove("fa-hand-fist");
     removeIcons(icon);
+
     icon.classList.add("fa-hand-scissors");
     icon.classList.add("transform");
 
