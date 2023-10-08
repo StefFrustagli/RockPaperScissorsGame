@@ -51,7 +51,7 @@ options.forEach((option) => {
 
 // Function computer random choice
 function getComputerChoice() {
-    const choices = ["computer-rock", "computer-paper", "computer-scissors"]; // computer's hands IDs
+    const choices = ["rock", "paper", "scissors"]; // they were computer's hands IDs, now changed into "rock" paper, scissors
     let randomNumber = Math.floor(Math.random() * 3); //making sure only 0, 1 or 2 can be selected
     let computerChoice = choices[randomNumber];
     console.log(computerChoice);
@@ -78,14 +78,16 @@ function playComputerTurn() {
         "fa-hand-back-fist",
         "fa-hand-scissors"
     );
+    
+    // If condition for Computer choice
+    if (computerChoice === "rock") {
+           icon.classList.add("fa-hand-back-fist");
+       } else if (computerChoice === "paper") {
+           icon.classList.add("fa-hand");
+       } else if (computerChoice === "scissors") {
+           icon.classList.add("fa-hand-scissors");
+       }
 
-    if (computerChoice === "computer-rock") {
-        icon.classList.add("fa-hand-back-fist");
-    } else if (computerChoice === "computer-paper") {
-        icon.classList.add("fa-hand");
-    } else if (computerChoice === "computer-scissors") {
-        icon.classList.add("fa-hand-scissors");
-    }
 
     // Determine the winner
     const winner = determineWinner(playerChoice, computerChoice);
@@ -200,8 +202,8 @@ function determineWinner(playerChoice, computerChoice) {
         (playerChoice === "paper" && computerChoice === "rock")
     ) {
         return "Player";
-    }
-
+    } else {
     // If it's not a tie and player didn't win, computer wins
     return "Computer";
+    }
 }

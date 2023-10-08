@@ -81,8 +81,12 @@ body {
 
 
 /* Shake hands animations */
-.shakePlayer, .shakeComputer  {
+.shakePlayer {
     animation: shakePlayer 0.9s linear;
+}
+
+.shakeComputer {
+    animation: shakeComputer 0.9s linear;
 }
 
 .hands {
