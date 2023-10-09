@@ -48,8 +48,15 @@ body {
 
 /* Hands */
 
-.player-hand-scissors {
+/*.player-hand-scissors {
 transform: scaleY(-1);
+} */
+
+.player-hand-scissors {
+    font-size: 9rem;
+    color: #55ad7a;
+   /* transform: rotate(90deg) scale(-1, 1); */
+    /* Flip horizontally for scissors */
 }
 
 /*
@@ -81,16 +88,9 @@ transform: scaleY(-1);
     transform: rotate(90deg);
 }
 
-.player-hand-scissors {
-    font-size: 9rem;
-    color: #55ad7a;
-    transform: rotate(90deg) scale(-1, 1);
-    /* Flip horizontally for scissors */
-}
-
 .rotate-90 {
     transform: rotate(90deg);
-}
+} 
 
 .pc-hand {
     font-size: 9rem;

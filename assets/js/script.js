@@ -77,7 +77,8 @@ function getPlayerChoice() {
         document.getElementsByClassName('player-hand')[0].style.transform = "rotate(90deg)";
 
     return choiceMapping[choiceClass];
-    }
+    };
+
 }
 
 // Function computer turn
@@ -95,13 +96,14 @@ function playComputerTurn() {
     // If condition for Computer choice
     if (computerChoice === "rock") {
         icon.classList.add("fa-hand-back-fist");
-        icon.classList.add('fa-rotate-270');
+        icon.classList.add('fa-rotate-270'); // To fix scissors' hand
     } else if (computerChoice === "paper") {
         icon.classList.add("fa-hand");
-        icon.classList.add('fa-rotate-270');
+        icon.classList.add('fa-rotate-270'); // To fix scissors' hand
     } else if (computerChoice === "scissors") {
         icon.classList.add("fa-hand-scissors");
-        icon.classList.remove('fa-rotate-270');
+        icon.classList.remove('fa-rotate-270'); // To fix scissors' hand
+        icon.classList.remove('rotate-90');
 
     }
 
@@ -117,7 +119,7 @@ function playComputerTurn() {
     }
 
     updateScore(playerScore, computerScore);
-    displayWinner(winner);
+    checkAndResetScores();
 }
 
 // Function to update the player's hand
@@ -157,6 +159,7 @@ scissorsButton.addEventListener("click", function () {
     removeIcons(icon);
 
     icon.classList.add("fa-hand-scissors");
+    
     icon.classList.add("transform");
 
     removeRotation(icon);
@@ -189,21 +192,24 @@ function removeRotation(icon) {
     }
 }
 
-// updateScore function
+// update Score function
 function updateScore(playerScore, computerScore) {
     playerScore_span.textContent = playerScore; // Use .textContent to update score
     computerScore_span.textContent = computerScore;
+    checkAndResetScores();
 }
 
 // Functions to increase points to winner
 function playerWins() {
     playerScore++; // Increment the player's score
     updateScore(playerScore, computerScore); // Update the displayed scores
+    
 }
 
 function computerWins() {
     computerScore++; // Incremement the pc's score
     updateScore(playerScore, computerScore); // Update the displayed scores
+    
 }
 
 // Determine the winner of a round and update the score
@@ -236,11 +242,13 @@ function resetScore() {
 }
 
 // Check if the player or computer score has reached 10
-if (playerScore === 10 || computerScore === 10) {
-    // If either player or computer score reaches 10, reset both scores to 0
-
-    playerScore = 0;
-    computerScore = 0;
-    alert("Scores have been reset!");
-    resetScore();
+function checkAndResetScores() {
+    if (playerScore === 10 || computerScore === 10) {
+        // If either player or computer score reaches 10, reset both scores to 0
+        playerScore = 0;
+        computerScore = 0;
+        alert("Scores have been reset!");
+        resetScore();
+        
+    }
 }
