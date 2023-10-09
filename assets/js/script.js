@@ -24,9 +24,9 @@ let scoreArea_div = document.querySelector(".score-area");
 
 
 // Instructions game - SweetAlert??
-document.getElementById('how-to-play').addEventListener('click', function(){
+document.getElementById('how-to-play').addEventListener('click', function () {
 
-    
+
 });
 
 //  Make sure the machine recognise the choices
@@ -84,15 +84,15 @@ function playComputerTurn() {
         "fa-hand-back-fist",
         "fa-hand-scissors"
     );
-    
+
     // If condition for Computer choice
     if (computerChoice === "rock") {
-           icon.classList.add("fa-hand-back-fist");
-       } else if (computerChoice === "paper") {
-           icon.classList.add("fa-hand");
-       } else if (computerChoice === "scissors") {
-           icon.classList.add("fa-hand-scissors");
-       }
+        icon.classList.add("fa-hand-back-fist");
+    } else if (computerChoice === "paper") {
+        icon.classList.add("fa-hand");
+    } else if (computerChoice === "scissors") {
+        icon.classList.add("fa-hand-scissors");
+    }
 
 
     // Determine the winner
@@ -148,7 +148,8 @@ scissorsButton.addEventListener("click", function () {
     icon.classList.add("fa-hand-scissors");
     icon.classList.add("transform");
 
-   removeRotation(icon);
+    removeRotation(icon);
+    
 });
 
 // Function to make sure classes don't get added to each others and buttons run correctly
@@ -210,28 +211,25 @@ function determineWinner(playerChoice, computerChoice) {
     ) {
         return "Player";
     } else {
-    // If it's not a tie and player didn't win, computer wins
-    return "Computer";
+        // If it's not a tie and player didn't win, computer wins
+        return "Computer";
     }
 }
 
 // Function to reset score
 
 function resetScore() {
-        playerScore = 0;
-        computerScore = 0;
-        updateScore(playerScore, computerScore);
-    }
+    playerScore = 0;
+    computerScore = 0;
+    updateScore(playerScore, computerScore);
+}
 
-    // Check if the player or computer score has reached 10
-    if (playerScore === 10 || computerScore === 10) {
-        // If either player or computer score reaches 10, reset both scores to 0
-        
-        playerScore = 0;
-        computerScore = 0;
-        alert("Scores have been reset!");
-        resetScore();
-    }
+// Check if the player or computer score has reached 10
+if (playerScore === 10 || computerScore === 10) {
+    // If either player or computer score reaches 10, reset both scores to 0
 
-
-
+    playerScore = 0;
+    computerScore = 0;
+    alert("Scores have been reset!");
+    resetScore();
+}
