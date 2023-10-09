@@ -70,7 +70,14 @@ function getPlayerChoice() {
         return className in choiceMapping;
     });
 
+    if (choiceMapping[choiceClass] === 'scissors') {
+        document.getElementsByClassName('player-hand')[0].style.transform = "rotate(0deg)";
+        return choiceMapping[choiceClass];
+    } else {
+        document.getElementsByClassName('player-hand')[0].style.transform = "rotate(90deg)";
+
     return choiceMapping[choiceClass];
+    }
 }
 
 // Function computer turn
@@ -88,10 +95,14 @@ function playComputerTurn() {
     // If condition for Computer choice
     if (computerChoice === "rock") {
         icon.classList.add("fa-hand-back-fist");
+        icon.classList.add('fa-rotate-270');
     } else if (computerChoice === "paper") {
         icon.classList.add("fa-hand");
+        icon.classList.add('fa-rotate-270');
     } else if (computerChoice === "scissors") {
         icon.classList.add("fa-hand-scissors");
+        icon.classList.remove('fa-rotate-270');
+
     }
 
 
