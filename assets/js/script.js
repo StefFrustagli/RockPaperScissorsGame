@@ -22,9 +22,7 @@ let playerScore_span = document.getElementById("player-score"); // variables wit
 let computerScore_span = document.getElementById("computer-score");
 let scoreArea_div = document.querySelector(".score-area");
 
-
-
-//  Make sure the machine recognise the choices
+// get the open buttonchine recognise the choices
 const choiceMapping = {
     "fa-hand-back-fist": "rock",
     "fa-hand": "paper",
@@ -256,22 +254,13 @@ const modalContainer = document.getElementById('container');
 // get the closing button
 const closeModal = document.getElementById('close-modal');
 
-// MODAL - How to play button with instructions for the game
-// open modal clicking on button
+// MODAL - How to play button with instructions for the game (code adapted from W3Schools)
+// Open modal clicking on button 
 howToPlayButton.onclick = function () {
     modalContainer.style.display = "block";
 }
 
-// close modal clicking on button
+// Close modal clicking on button
 closeModal.onclick = function () {
     modalContainer.style.display = "none";
 }
-
-/*howToPlayButton.addEventListener('click', () => {
-    modalContainer.classList.add('show');
-}) */
-
-/*
-closeModal.addEventListener('click', () => {
-    modalContainer.classList.remove('show');
-}) */
