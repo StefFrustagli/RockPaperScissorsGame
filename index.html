@@ -1,109 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Meta tags for search engines -->
-    <meta name="description" content="A classic rock, paper and scissors game." />
-    <meta name="keywords"
-        content="JavaScript, rock, paper, scissors, game, rock paper scissors game, javascript game" />
+    <meta
+      name="description"
+      content="A classic rock, paper and scissors game."
+    />
+    <meta
+      name="keywords"
+      content="JavaScript, rock, paper, scissors, game, rock paper scissors game, javascript game"
+    />
     <!-- Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-        rel="stylesheet" />
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
     <!-- Title-->
     <title>Rock, Paper, Scissors game</title>
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
     <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="header">
-        <button type="button" id="how-to-play" class="instructions-btn" aria-label="Alert with the game rules">How to
-            play</button>
+      <!-- Button for modal -->
+      <button
+        type="button"
+        id="how-to-play"
+        class="instructions-btn"
+        aria-label="click to open popup with the game rules"
+      >
+        How to play
+      </button>
+      <div class="modal-container" id="container">
+        <div class="modal">
+          <h1>Player vs Robot</h1>
+
+          <p class="modal-content">
+            The rules are: Rock beats scissors; Scissors beat paper; Paper beats
+            rock.
+          </p>
+          <p class="modal-content">
+            The score resets when one of the opponents reaches 10 points.
+          </p>
+          <button id="close-modal">Close the modal</button>
+        </div>
+      </div>
     </div>
     <main class="game-area">
-        <h2>Can you beat the machine?</h2>
-        <section class="hands">
-            <!--Default hands icons-->
-            <span id="default-player-hand" class="player-hand">
-                <i class="fa-solid fa-hand-fist"></i>
-            </span>
-            <span id="default-computer-hand" class="pc-hand">
-                <i class="fa-solid fa-hand-fist fa-rotate-270"></i>
-            </span>
-            <!-- Hidden hands icons -->
-            <section class="hidden-hands-player hide">
-                <span class="player-hand-rock">
-                    <i class="fa-solid fa-hand-back-fist"></i>
-                </span>
-                <span class="player-hand-paper">
-                    <i class="fa-solid fa-hand"></i>
-                </span>
-            </section>
-            <section class="hidden-hands-computer hide">
-                <span class="computer-hand-rock" id="computer-rock">
-                    <i class="fa-solid fa-hand-back-fist"></i>
-                </span>
-                <span class="computer-hand-paper" id="computer-paper">
-                    <i class="fa-solid fa-hand"></i>
-                </span>
-            </section>
-            <!-- Scissors hands -->
-            <section class="hidden-hand-scissors-player hide">
-                <span class="player-hand-scissors">
-                    <i class="fa-solid fa-hand-scissors"></i>
-                </span>
-            </section>
-            <section class="hidden-hand-scissors-computer hide">
-                <span class="computer-hand-scissors" id="computer-scissors">
-                    <i class="fa-solid fa-hand-scissors"></i>
-                </span>
-            </section>
+      <h2>Can you beat the machine?</h2>
+      <section class="hands">
+        <!--Default hands icons-->
+        <span id="default-player-hand" class="player-hand">
+          <i class="fa-solid fa-hand-fist"></i>
+        </span>
+        <span id="default-computer-hand" class="pc-hand">
+          <i class="fa-solid fa-hand-fist fa-rotate-270"></i>
+        </span>
+        <!-- Hidden hands icons -->
+        <section class="hidden-hands-player hide">
+          <span class="player-hand-rock">
+            <i class="fa-solid fa-hand-back-fist"></i>
+          </span>
+          <span class="player-hand-paper">
+            <i class="fa-solid fa-hand"></i>
+          </span>
         </section>
+        <section class="hidden-hands-computer hide">
+          <span class="computer-hand-rock" id="computer-rock">
+            <i class="fa-solid fa-hand-back-fist"></i>
+          </span>
+          <span class="computer-hand-paper" id="computer-paper">
+            <i class="fa-solid fa-hand"></i>
+          </span>
+        </section>
+        <!-- Scissors hands -->
+        <section class="hidden-hand-scissors-player hide">
+          <span class="player-hand-scissors">
+            <i class="fa-solid fa-hand-scissors"></i>
+          </span>
+        </section>
+        <section class="hidden-hand-scissors-computer hide">
+          <span class="computer-hand-scissors" id="computer-scissors">
+            <i class="fa-solid fa-hand-scissors"></i>
+          </span>
+        </section>
+      </section>
 
-        <!-- Options area-->
+      <!-- Options area-->
 
-        <div class="options">
-            <button type="button" class="buttons" id="button-rock">Rock</button>
-            <button type="button" class="buttons" id="button-paper">Paper</button>
-            <button type="button" class="buttons" id="button-scissors">
-                Scissors
-            </button>
-        </div>
-        <!-- Scores area-->
-        <div class="score-area">
-            <p class="scores">
-                Your score:
-                <span id="player-score">0</span>
-            </p>
-            <p class="scores">
-                PC score:
-                <span id="computer-score">0</span>
-            </p>
-        </div>
+      <div class="options">
+        <button type="button" class="buttons" id="button-rock">Rock</button>
+        <button type="button" class="buttons" id="button-paper">Paper</button>
+        <button type="button" class="buttons" id="button-scissors">
+          Scissors
+        </button>
+      </div>
+      <!-- Scores area-->
+      <div class="score-area">
+        <p class="scores">
+          Your score:
+          <span id="player-score">0</span>
+        </p>
+        <p class="scores">
+          PC score:
+          <span id="computer-score">0</span>
+        </p>
+      </div>
     </main>
 
     <footer>
-        <div id="github">
-            <a href="https://github.com/StefFrustagli" target="_blank" rel="noopener"
-                aria-label="Visit my GitHub page (opens in a new tab)"><i class="fa-brands fa-github"></i></a>
-        </div>
+      <div id="github">
+        <a
+          href="https://github.com/StefFrustagli"
+          target="_blank"
+          rel="noopener"
+          aria-label="Visit my GitHub page (opens in a new tab)"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+      </div>
     </footer>
 
     <!--Font Awesome kit-->
-    <script src="https://kit.fontawesome.com/c752518e32.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/c752518e32.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- JavaScript -->
     <script src="assets/js/script.js"></script>
-</body>
-
+  </body>
 </html>

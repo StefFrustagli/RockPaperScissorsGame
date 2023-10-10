@@ -23,11 +23,6 @@ let computerScore_span = document.getElementById("computer-score");
 let scoreArea_div = document.querySelector(".score-area");
 
 
-// Instructions game - SweetAlert??
-document.getElementById('how-to-play').addEventListener('click', function () {
-
-
-});
 
 //  Make sure the machine recognise the choices
 const choiceMapping = {
@@ -252,3 +247,31 @@ function checkAndResetScores() {
         
     }
 }
+
+
+// get the open button
+const howToPlayButton = document.getElementById('how-to-play');
+// get the modal
+const modalContainer = document.getElementById('container');
+// get the closing button
+const closeModal = document.getElementById('close-modal');
+
+// MODAL - How to play button with instructions for the game
+// open modal clicking on button
+howToPlayButton.onclick = function () {
+    modalContainer.style.display = "block";
+}
+
+// close modal clicking on button
+closeModal.onclick = function () {
+    modalContainer.style.display = "none";
+}
+
+/*howToPlayButton.addEventListener('click', () => {
+    modalContainer.classList.add('show');
+}) */
+
+/*
+closeModal.addEventListener('click', () => {
+    modalContainer.classList.remove('show');
+}) */
