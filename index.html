@@ -46,7 +46,8 @@
   </head>
 
   <body>
-    <div class="header">
+    <!-- Header -->
+    <header class="header">
       <!-- Button for modal -->
       <button
         type="button"
@@ -60,8 +61,9 @@
         <div class="modal">
           <h1>Player vs Robot</h1>
           <p class="modal-content">
-            Rock beats scissors. <br> Scissors beat paper. <br> Paper beats
-            rock.
+            Rock beats scissors. <br />
+            Scissors beat paper. <br />
+            Paper beats rock. <br />
           </p>
           <p class="modal-content">
             The score resets when one of the opponents reaches 10 points.
@@ -69,9 +71,11 @@
           <button id="close-modal">PLAY</button>
         </div>
       </div>
-    </div>
+    </header>
+    <!-- Game area -->
     <main class="game-area">
       <h2>Can you beat the machine?</h2>
+      <!-- Hands-->
       <section class="hands">
         <!--Default hands icons-->
         <span id="default-player-hand" class="player-hand">
@@ -111,16 +115,16 @@
       </section>
 
       <!-- Options area-->
-
-      <div class="options">
+      <section class="options">
         <button type="button" class="buttons" id="button-rock">Rock</button>
         <button type="button" class="buttons" id="button-paper">Paper</button>
         <button type="button" class="buttons" id="button-scissors">
           Scissors
         </button>
-      </div>
+      </section>
+
       <!-- Scores area-->
-      <div class="score-area">
+      <section class="score-area">
         <p class="scores">
           Your score:
           <span id="player-score">0</span>
@@ -129,9 +133,9 @@
           PC score:
           <span id="computer-score">0</span>
         </p>
-      </div>
+      </section>
     </main>
-
+    <!-- Footer with GitHub icon-->
     <footer>
       <div id="github">
         <a

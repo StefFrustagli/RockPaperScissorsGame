@@ -22,11 +22,18 @@ It is intended for people who want to experience a simple JavaScript game and se
 
 ## Table of Contents
 
+- [User Experience (UX)](#user-experience)
+- [Features](#features)
+- [Tecnologies used](#technologies-used)
+- [Testing](#testing)
+- [Deployment](#deployment)
+- [Credits](#credits)
+
 ## User Experience
 
 ### Design
 
-My intention was to design a simple and minimalistic website, with essential information easily accessible.
+My goal was to create a classic 'Rock, Paper, Scissors' game where the player fights against a machine. The page design is simple, with cold colours that evoke a robotic theme.
 
 
 ### Website's goals
@@ -47,12 +54,21 @@ My intention was to design a simple and minimalistic website, with essential inf
 
 ### Wireframes
 
-Below are the wireframes I created during the design process (whose aspect and colour slightly differ from the final product):
+Below are the wireframes I created during the design process (whose aspect and colours differ from the final product):
+
+<details> <summary>Wireframes</summary>
+<p align="center">
+<img src="https://i.ibb.co/Mh8VdKg/Wireframe-draft-desktop.png" alt="Wireframe for the Homepage - desktop"/>
+</br>
+<img src="https://i.ibb.co/VQKw4rG/Wireframe-draft-mobile.png" alt="Wireframe for the Homepage - mobile"/>
+<br/>
+</p>
+</details>
 
 
 ### Palette
 
-The colour palette was generated from the hero image using [color-hex](https://www.color-hex.com/). It was intended to use some colors that evoke the image of a robot.
+The colour palette was generated from the hero image using [color-hex](https://www.color-hex.com/). As I said, I wanted some colors that evoke the image of a robot.
 
 ![Colour palette](https://i.ibb.co/16zdc66/Colour-Palette.png "Colour palette")
 
@@ -69,9 +85,12 @@ The favicon was created using [Favicon Generator](https://favicon.io/favicon-gen
 
 I chose an image of a robot that represents the machine the player attempts to beat.
 
-![Robot favicon as appears in the tab](https://png "Favicon")
+![Robot favicon as appears in the tab](https://i.ibb.co/rG55bZ3/Screenshot-2023-10-10-at-20-49-56.png "Favicon")
 
 ## Features
+
+### Homepage / main page
+
 
 ### Existing Features
 
