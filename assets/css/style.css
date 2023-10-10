@@ -165,11 +165,11 @@ transform: scaleY(-1);
 
 
 /* Shake hands animations */
-.shakePlayer {
+.shake-player {
     animation: shakePlayer 0.9s linear;
 }
 
-.shakeComputer {
+.shake-computer {
     animation: shakeComputer 0.9s linear;
 }
 

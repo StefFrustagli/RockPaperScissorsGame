@@ -32,13 +32,13 @@ const choiceMapping = {
 //Arrow function for hands shaking
 options.forEach((option) => {
     option.addEventListener("click", () => {
-        player.classList.add("shakePlayer");
-        computer.classList.add("shakeComputer");
+        player.classList.add("shake-player");
+        computer.classList.add("shake-computer");
 
         // Delay for shaking animation
         setTimeout(() => {
-            player.classList.remove("shakePlayer");
-            computer.classList.remove("shakeComputer");
+            player.classList.remove("shake-player");
+            computer.classList.remove("shake-computer");
 
             // After the shaking animation, update the hands
             setTimeout(() => {
