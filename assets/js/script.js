@@ -240,7 +240,7 @@ function checkAndResetScores() {
         // If either player or computer score reaches 10, reset both scores to 0
         playerScore = 0;
         computerScore = 0;
-        alert("Scores have been reset!");
+       /* alert("Scores have been reset!"); */
         resetScore();
         
     }
