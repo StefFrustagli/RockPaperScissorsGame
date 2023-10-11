@@ -45,15 +45,29 @@ My goal was to create a classic 'Rock, Paper, Scissors' game where the player fi
 
 
 ### Ideal viewers
-
-
+- A JavaScript learner who wants to see a simple game in action.
+- A Rock, Paper, Scissors game enthusiast.
+- Someone who wants to distract themselves from daily tasks by playing an online game.
   
 ### User stories
 
+#### JavaScript learners:
+- I want to see an example of a JavaScript game in action.
+- I want to try the classic 'Rock Paper Scissors' game created with basic JavaScript knowledge.
+- I want to look at a game and see if I'm able to understand how it works and build a similar version.
+
+#### Rock, paper, scissors game enthusiasts:
+- I want to play a classic game version.
+- I like the idea of competing against a robot.
+- I like the game design and want to try this version of the game.
+
+#### Random player:
+- I want to spend a few minutes distracting yourself from routine tasks.
+- I want to play an online game that doesn't require too much concentration.
+- I want to play an online game against a chance-dominated computer and test my luck
 
 
 ### Wireframes
-
 Below are the wireframes I created during the design process (whose aspect and colours differ from the final product):
 
 <details> <summary>Wireframes</summary>
