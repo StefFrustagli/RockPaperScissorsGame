@@ -61,11 +61,22 @@ My goal was to create a classic 'Rock, Paper, Scissors' game where the player fi
 - I like the idea of competing against a robot.
 - I like the game design and want to try this version of the game.
 
-#### Random player:
+#### Random players:
 - I want to spend a few minutes distracting yourself from routine tasks.
 - I want to play an online game that doesn't require too much concentration.
-- I want to play an online game against a chance-dominated computer and test my luck
+- I want to play an online game against a chance-dominated computer and test my luck.
 
+#### What the user might expect:
+- To understand the game's rules.
+- To see the score counters.
+- To see the computer's choice.
+
+#### As a developer, I expect:
+- To provide easy and logical navigation within the game.
+- To make the game as clear and simple to play as possible.
+- To provide clear instructions.
+- To provide some fun with a chance game.
+- To show my JavaScript skills.
 
 ### Wireframes
 Below are the wireframes I created during the design process (whose aspect and colours differ from the final product):
