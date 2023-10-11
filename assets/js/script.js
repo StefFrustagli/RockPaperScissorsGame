@@ -69,7 +69,7 @@ function getPlayerChoice() {
     } else {
         document.getElementsByClassName('player-hand')[0].style.transform = "rotate(90deg)";
 
-    return choiceMapping[choiceClass];
+        return choiceMapping[choiceClass];
     };
 
 }
@@ -112,6 +112,9 @@ function playComputerTurn() {
     }
 
     updateScore(playerScore, computerScore);
+
+    // Display the winner
+    displayWinner();
     checkAndResetScores();
 }
 
@@ -152,11 +155,11 @@ scissorsButton.addEventListener("click", function () {
     removeIcons(icon);
 
     icon.classList.add("fa-hand-scissors");
-    
+
     icon.classList.add("transform");
 
     removeRotation(icon);
-    
+
 });
 
 // Function to make sure classes don't get added to each others and buttons run correctly
@@ -189,20 +192,20 @@ function removeRotation(icon) {
 function updateScore(playerScore, computerScore) {
     playerScore_span.textContent = playerScore; // Use .textContent to update score
     computerScore_span.textContent = computerScore;
-    checkAndResetScores();
+    //checkAndResetScores();
 }
 
 // Functions to increase points to winner
 function playerWins() {
     playerScore++; // Increment the player's score
     updateScore(playerScore, computerScore); // Update the displayed scores
-    
+
 }
 
 function computerWins() {
     computerScore++; // Incremement the pc's score
     updateScore(playerScore, computerScore); // Update the displayed scores
-    
+
 }
 
 // Determine the winner of a round and update the score
@@ -226,23 +229,40 @@ function determineWinner(playerChoice, computerChoice) {
     }
 }
 
+// Variables for results 
+let winnerResult = document.getElementById("winner-result");
+let loserResult = document.getElementById("loser-result");
+
+// Restults
+function displayWinner() {
+    if (playerScore === 10) {
+        winnerResult.style.display = "block";
+        loserResult.style.display = "none"; // Hide the loser result
+    } else if (computerScore === 10) {
+        loserResult.style.display = "block";
+        winnerResult.style.display = "none"; // Hide the winner result
+    }
+}
+
 // Function to reset score
 
 function resetScore() {
     playerScore = 0;
     computerScore = 0;
     updateScore(playerScore, computerScore);
+    // Hide winner/loser result
+    winnerResult.style.display = "none";
+    loserResult.style.display = "none";
 }
 
 // Check if the player or computer score has reached 10
 function checkAndResetScores() {
-    if (playerScore === 10 || computerScore === 10) {
+    if (playerScore === 9 || computerScore === 9) {
         // If either player or computer score reaches 10, reset both scores to 0
         playerScore = 0;
         computerScore = 0;
-       /* alert("Scores have been reset!"); */
         resetScore();
-        
+
     }
 }
 
@@ -258,9 +278,9 @@ const closeModal = document.getElementById('close-modal');
 // Open modal clicking on button 
 howToPlayButton.onclick = function () {
     modalContainer.style.display = "block";
-}
+};
 
 // Close modal clicking on button
 closeModal.onclick = function () {
     modalContainer.style.display = "none";
-}
+};

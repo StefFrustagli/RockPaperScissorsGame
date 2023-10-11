@@ -324,6 +324,19 @@ transform: scaleY(-1);
     font-size: 0.9rem;
 }
 
+/* Result area*/
+#winner-result {
+    color: #55ad7a;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: none;
+}
+#loser-result {
+    color: #1e5d88;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: none;
+}
 
 /* Text: 'Can you beat the machine?'*/
 h2 {
