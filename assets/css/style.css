@@ -420,4 +420,29 @@ footer {
         font-size: 2rem;
     }
 
+    /* Modal for mobiles */
+    
+        .modal {
+            position: fixed;
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            /* Location of the box */
+            margin: auto;
+            left: 0.5rem;
+            right: 0.5rem;
+            top: 2rem;
+            bottom: 1.5rem;
+            width: 55%;
+            /* Full width */
+            height: 70%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: #1e5d88;
+        }
+    
 }

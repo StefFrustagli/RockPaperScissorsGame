@@ -74,6 +74,9 @@ function getPlayerChoice() {
 
 }
 
+
+
+
 // Function computer turn
 function playComputerTurn() {
     const computerChoice = getComputerChoice();
@@ -112,10 +115,21 @@ function playComputerTurn() {
     }
 
     updateScore(playerScore, computerScore);
-
+     
     // Display the winner
     displayWinner();
     checkAndResetScores();
+}
+
+// Display results
+function displayWinner() {
+    if (playerScore === 9) {
+        winnerResult.style.display = "block";
+        loserResult.style.display = "none"; // Hide the loser result
+    } else if (computerScore === 9) {
+        loserResult.style.display = "block";
+        winnerResult.style.display = "none"; // Hide the winner result
+    }
 }
 
 // Function to update the player's hand
@@ -233,16 +247,6 @@ function determineWinner(playerChoice, computerChoice) {
 let winnerResult = document.getElementById("winner-result");
 let loserResult = document.getElementById("loser-result");
 
-// Restults
-function displayWinner() {
-    if (playerScore === 10) {
-        winnerResult.style.display = "block";
-        loserResult.style.display = "none"; // Hide the loser result
-    } else if (computerScore === 10) {
-        loserResult.style.display = "block";
-        winnerResult.style.display = "none"; // Hide the winner result
-    }
-}
 
 // Function to reset score
 
@@ -251,17 +255,18 @@ function resetScore() {
     computerScore = 0;
     updateScore(playerScore, computerScore);
     // Hide winner/loser result
-    winnerResult.style.display = "none";
-    loserResult.style.display = "none";
+   
 }
 
 // Check if the player or computer score has reached 10
 function checkAndResetScores() {
-    if (playerScore === 9 || computerScore === 9) {
+    if (playerScore === 10 || computerScore === 10) {
         // If either player or computer score reaches 10, reset both scores to 0
         playerScore = 0;
         computerScore = 0;
         resetScore();
+        winnerResult.style.display = "none";
+        loserResult.style.display = "none";
 
     }
 }
