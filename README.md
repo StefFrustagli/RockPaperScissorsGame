@@ -159,7 +159,7 @@ Scissors:
 
 ![Player's hand: scissors](https://i.ibb.co/2N5jVWQ/Screenshot-2023-10-12-at-14-39-11.png "Player's hand: scissors")
 
-Once the player chooses, the computer will make a random choice.
+Once the player selects an option, the computer will make a random choice.
 The computer has the same options as the player:
 
 Rock:
@@ -168,26 +168,41 @@ Paper:
 
 Scissors:
 
+**Match points**
+![Match points](https://i.ibb.co/9bvWZR0/Screenshot-2023-10-12-at-17-05-22.png "Your score: 0; PC score: 0.")
+
+Match points are updated every time a match takes place. The winning conditions are: rock wins against scissors; paper wins against rock; and scissors win against paper. If both players throw the same hand signal, neither gets a point.
+A player's score is shown in green, while a computer's score is shown in blue.
+
+When the player or computer reaches 10 points, the following will appear:
+
+- A message indicating whether the player has won or lost;
+- A reset button to reset points to zero and restart the game.
+
+![Winner message and reset button](https://i.ibb.co/c233vX9/Screenshot-2023-10-12-at-17-28-25.png "You won") 
+or ![Loser message and reset button](https://i.ibb.co/vVTBNGQ/Screenshot-2023-10-12-at-17-29-25.png "You lost")
+
+The **Reset button** allows the user to reset the game. The button's border turns white when hovered over. When the button is clicked, the message "You won" or "You lost" disappears and the score resets.
 
 
+Examples of matches:
 
-Example of match:
+![Example of a match where computer wins and gets 1 point](https://i.ibb.co/tbjdkfQ/Scissors.png  "Example of a match where computer wins and gets 1 point")
+In this case, the player selects "Scissors" while the computer selects "Rock". The computer wins and gets a point.
 
-
-
+![Example of a match where player wins and gets 1 point](https://i.ibb.co/nLsQvhL/Screenshot-2023-10-12-at-17-26-55.png "Example of a match where player wins and gets 1 point")
+In this case, the player selects "Rock" while the computer selects "scissors". The player wins and gets a point.
 
 
 ### Footer
 ![Footer with GitHub link](https://i.ibb.co/b73NHBK/Footer.png "Footer")
 There is a GitHub icon in the footer that can be clicked for a link to the developer's GitHub page.
 
-
-
 ### Features and general aspects left to implement
 
-Due to the short deadline and my limited knowledge, my focus was creating a functional and essential game. However, I hope to accomplish the following as I move forward:
-
-- 
+Due to the short deadline and my limited knowledge, my focus was creating a functional and essential game. However, I hope to accomplish the following as I move forward: 
+- change the computer's hands into robot's hands
+- add
 
 ## Technologies used
 
@@ -206,6 +221,7 @@ Due to the short deadline and my limited knowledge, my focus was creating a func
 - [Font Awesome:](https://fontawesome.com/) was used to add icons in the footer.
 - [ImgBB:](https://imgbb.com/) was used to upload images and extract the source code.
 - [Am I Responsive?](http://ami.responsivedesign.is) was used to generate the mockup of the website.
+- [Table Convert](https://tableconvert.com/) was used to generate tables for the TESTING.md file.
 
 ## Testing
 
@@ -259,4 +275,4 @@ As this is my first time building a game with JavaScript, it has been extremelly
 
 ### Acknowledgment
 
-For their continuous support, suggestions and feedback, I am very grateful to my mentor Brian Macharia, the Code Institute tutors, and my fellow classmates on Slack, in particular Niclas.
+For their continuous support, suggestions and feedback, I am very grateful to my mentor Brian Macharia, the Code Institute tutors, and my fellow classmates on Slack, in particular Niclas for his precious help.
