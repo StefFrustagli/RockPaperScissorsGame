@@ -354,12 +354,14 @@ transform: scaleY(-1);
     text-transform: uppercase;
     font-weight: bold;
     display: none;
+    font-size: large;
 }
 #loser-result {
     color: #1e5d88;
     text-transform: uppercase;
     font-weight: bold;
     display: none;
+    font-size: large;
 }
 
 /* Text: 'Can you beat the machine?'*/
@@ -392,6 +394,11 @@ footer {
 @media screen and (max-width: 480px) {
 
     /* To make sure that hands and buttons fit on mobiles */
+
+#winner-result, #loser-result {
+    margin: 0.5rem;
+
+}
 
     .player-hand {
         font-size: 5rem;
@@ -437,6 +444,7 @@ footer {
         display: flex;
     }
 
+    
 
     h2 {
         margin-bottom: 0;
@@ -469,4 +477,24 @@ footer {
             background-color: #1e5d88;
         }
     
+        .scores{
+            margin:0;
+        }
+                #reset-button {
+                    display: flexi;
+                    align-items: center;
+                    margin: auto;
+                    display: none;
+                    float: center;
+                    background-color: #334d5c;
+                    color: white;
+                    border: 3px solid black;
+                    margin: 0.8rem;
+                    font-size: 1rem;
+                    padding: 0.2rem;
+                    border-radius: 0.5rem;
+                    cursor: pointer;
+                    transition: 0.2s all linear;
+                    margin: 0;
+                }
 }
