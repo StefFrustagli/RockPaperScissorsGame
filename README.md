@@ -140,12 +140,41 @@ The initial situation in the game shows the two hands facing each others (as ima
 The hand icons change according to the selections made by the player and computer when a button is clicked.
 
 Selectable options for the player are Rock, Paper and Scissors.
+![Buttons with options: "Rock", "Paper" and "Scissors"](https://i.ibb.co/n07DxZ1/Game-area.png "Buttons with selectable options")
+
+Upon selecting the button "Rock," the Player's hand appears as follows:
+
+Upon selecting one of the buttons, the Player's hand appears as follows:
+
+Rock: 
+
+![Player's hand: rock](https://i.ibb.co/6W0M07D/Screenshot-2023-10-12-at-14-21-20.png "Player's hand: rock")
+
+Paper:
+
+![Player's hand: paper](https://i.ibb.co/7KbdQc2/Screenshot-2023-10-12-at-14-37-31.png "Player's hand: paper")
+
+
+Scissors:
+
+![Player's hand: scissors](https://i.ibb.co/2N5jVWQ/Screenshot-2023-10-12-at-14-39-11.png "Player's hand: scissors")
+
+Once the player chooses, the computer will make a random choice.
+The computer has the same options as the player:
 
 Rock:
 
 Paper:
 
 Scissors:
+
+
+
+
+Example of match:
+
+
+
 
 
 ### Footer
