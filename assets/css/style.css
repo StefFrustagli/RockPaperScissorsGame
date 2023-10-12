@@ -10,11 +10,9 @@ body {
     background-color: #334d5c;
     text-align: center;
     padding: 0.05rem;
-
 }
 
 /* How to play button */
-
 .instructions-btn {
     color: white;
     padding-right: 1rem;
@@ -35,19 +33,16 @@ body {
 }
 
 /*Modal*/
-
 .modal-container {
     box-sizing: border-box;
     display: none;
     background-color: #1e5d88;
     color: white;
-
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
 }
-
 
 .modal {
     position: fixed;
@@ -57,9 +52,9 @@ body {
     padding-bottom: 10px;
     /* Location of the box */
     margin: auto;
-        left: 50px;
-        right: 50px;
-            top: 2em;
+    left: 50px;
+    right: 50px;
+    top: 2em;
     bottom: 5rem;
     width: 40%;
     /* Full width */
@@ -72,12 +67,10 @@ body {
 
 .modal-content {
     color: white;
-
 }
 
 /* The Close Button */
 #close-modal {
-    float: center;
     background-color: #d5d5d5;
     color: #1e5d88;
     border: 3px solid #1e5d88;
@@ -89,14 +82,12 @@ body {
     transition: 0.2s all linear;
 }
 
-
 #close-modal:hover,
 #close-modal:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
-    
-} 
+}
 
 /*
 #close-modal:hover {
@@ -104,33 +95,29 @@ body {
     border: 3px solid #334d5c;
 cursor: pointer;
 }  */
-
 /* Reset button */
-  #reset-button {
-    display: flexi;
+#reset-button {
     align-items: center;
     margin: auto;
     display: none;
-        float: center;
-        background-color: #334d5c;
-        color: white;
-        border: 3px solid black;
-        margin: 0.8rem;
-        font-size: 1rem;
-        padding: 0.7rem;
-        border-radius: 0.5rem;
-        cursor: pointer;
-        transition: 0.2s all linear;
-    }
-#reset-button:hover {
-    background-color: #1e5d88;
-        border: 3px solid white;
-        cursor: pointer;
+    background-color: #334d5c;
+    color: white;
+    border: 3px solid black;
+    margin: 0.8rem;
+    font-size: 1rem;
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.2s all linear;
 }
 
+#reset-button:hover {
+    background-color: #1e5d88;
+    border: 3px solid white;
+    cursor: pointer;
+}
 
 /* Game area */
-
 .game-area {
     width: 85%;
     height: 65vh;
@@ -144,22 +131,10 @@ cursor: pointer;
 }
 
 /* Hands */
-
-/*.player-hand-scissors {
-transform: scaleY(-1);
-} */
-
 .player-hand-scissors {
     font-size: 9rem;
     color: #55ad7a;
-    /* transform: rotate(90deg) scale(-1, 1); */
-    /* Flip horizontally for scissors */
 }
-
-/*
-#computer-scissors {
-    transform: rotateY(180deg);
-}*/
 
 .class-hand {
     font-size: 90%;
@@ -170,7 +145,6 @@ transform: scaleY(-1);
     color: #55ad7a;
     transform: rotate(90deg);
     /* Always face the specified direction */
-
 }
 
 .player-hand-rock {
@@ -192,9 +166,7 @@ transform: scaleY(-1);
 .pc-hand {
     font-size: 9rem;
     color: #1e5d88;
-
 }
-
 
 /* Shake hands animations */
 .shake-player {
@@ -219,17 +191,14 @@ transform: scaleY(-1);
 }
 
 /* Other hands icons (hidden in HTML) */
-
 .hide {
     display: none !important;
-
 }
 
 .hidden-hands-player {
     font-size: 9rem;
     color: #55ad7a;
     transform: rotate(90deg);
-
 }
 
 .hidden-hands-computer {
@@ -251,11 +220,7 @@ transform: scaleY(-1);
 .hidden-hand-scissors-computer {
     font-size: 9rem;
     color: #1e5d88;
-
-
 }
-
-
 
 /* Options */
 .options {
@@ -278,7 +243,6 @@ transform: scaleY(-1);
 .buttons:hover {
     background-color: #55ad7a;
     border: 3px solid #334d5c;
-
 }
 
 /* Animation for shaking hands (thanks to Code Grind) */
@@ -303,7 +267,6 @@ transform: scaleY(-1);
     100% {
         transform: rotate(0deg);
     }
-
 }
 
 /* Shake computer's hand */
@@ -327,18 +290,15 @@ transform: scaleY(-1);
     100% {
         transform: rotate(0deg);
     }
-
 }
 
 /* Score area */
-
- .scores {
-     margin: 0;
- }
+.scores {
+    margin: 0;
+}
 
 #player-score {
     color: #55ad7a;
-
 }
 
 #computer-score {
@@ -362,6 +322,7 @@ transform: scaleY(-1);
     display: none;
     font-size: large;
 }
+
 #loser-result {
     color: #1e5d88;
     text-transform: uppercase;
@@ -400,11 +361,10 @@ footer {
 @media screen and (max-width: 480px) {
 
     /* To make sure that hands and buttons fit on mobiles */
-
-#winner-result, #loser-result {
-    margin: 0.5rem;
-
-}
+    #winner-result,
+    #loser-result {
+        margin: 0.5rem;
+    }
 
     .player-hand {
         font-size: 5rem;
@@ -450,8 +410,6 @@ footer {
         display: flex;
     }
 
-    
-
     h2 {
         margin-bottom: 0;
         margin-top: 1rem;
@@ -459,48 +417,46 @@ footer {
     }
 
     /* Modal for mobiles */
-    
-        .modal {
-            position: fixed;
-            z-index: 1;
-            /* Sit on top */
-            padding-top: 1rem;
-            padding-bottom: 1rem;
-            padding-left: 2rem;
-            padding-right: 2rem;
-            /* Location of the box */
-            margin: auto;
-            left: 0.5rem;
-            right: 0.5rem;
-            top: 2rem;
-            bottom: 1.5rem;
-            width: 55%;
-            /* Full width */
-            height: 70%;
-            /* Full height */
-            overflow: auto;
-            /* Enable scroll if needed */
-            background-color: #1e5d88;
-        }
-    
-        .scores{
-            margin:0;
-        }
-                #reset-button {
-                    display: flexi;
-                    align-items: center;
-                    margin: auto;
-                    display: none;
-                    float: center;
-                    background-color: #334d5c;
-                    color: white;
-                    border: 3px solid black;
-                    margin: 0.8rem;
-                    font-size: 1rem;
-                    padding: 0.2rem;
-                    border-radius: 0.5rem;
-                    cursor: pointer;
-                    transition: 0.2s all linear;
-                    margin: 0;
-                }
+    .modal {
+        position: fixed;
+        z-index: 1;
+        /* Sit on top */
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        /* Location of the box */
+        margin: auto;
+        left: 0.5rem;
+        right: 0.5rem;
+        top: 2rem;
+        bottom: 1.5rem;
+        width: 55%;
+        /* Full width */
+        height: 70%;
+        /* Full height */
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: #1e5d88;
+    }
+
+    .scores {
+        margin: 0;
+    }
+
+    #reset-button {
+        align-items: center;
+        margin: auto;
+        display: none;
+        background-color: #334d5c;
+        color: white;
+        border: 3px solid black;
+        margin: 0.8rem;
+        font-size: 1rem;
+        padding: 0.2rem;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        transition: 0.2s all linear;
+        margin: 0;
+    }
 }

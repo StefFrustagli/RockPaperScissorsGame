@@ -7,7 +7,13 @@
 
 ### HTML
 
-The [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html) returned 
+The [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html) returned some warnings: "Section lacks heading":
+
+![Warnings](https://i.ibb.co/vvvjSGp/Screenshot-2023-10-12-at-21-01-59.pngg "Section lacks heading.")
+
+**How I fixed this**: I have added some hidden headings in the sections.
+
+In conclusion, the message returned no errors.
 ![Document checking completed. No errors or warnings to show.](https://i.ibb.co/hddrgq4/Screenshot-2023-08-29-at-20-38-56.png "Document checking completed")
 
 ### CSS
@@ -46,8 +52,8 @@ No errors were found when passing through the official [(Jigsaw) validator](http
 Below are the browsers that have been tested:
 
 - Chrome Version 116.0.5845.140
-- Firefox Version 117.0
-- Safari Version 16.6
+- Firefox Version 118.0.2
+- Version 17.0 (17616.1.27.111.22, 17616)
 
 ## Responsiveness
 
@@ -59,23 +65,21 @@ I performed this test using Chrome Dev tools in an incognito window.
 
 The result, with a mobile setup, was the following:
 
-- Performance:
-- Accessibility:
-- Best practises: 
-- SEO: 
-  
+- Performance: 92;
+- Accessibility: 100;
+- Best practises: 100;
+- SEO: 100;
 
-
-![Test result: 88 Performance, 96 Accessibility, 100 Best Practices, 100 SEO](https:png)
+![Test result: 92 Performance, 100 Accessibility, 100 Best Practices, 100 SEO](https://i.ibb.co/GTtZcY9/Screenshot-2023-10-12-at-22-47-52.png)
 
 The result, with a desktop setup, was the following:
 
-- Performance: 
-- Accessibility: 
-- Best practises: 
-- SEO: 
+- Performance: 99;
+- Accessibility: 100;
+- Best practises: 100;
+- SEO: 100;
   
-![Test result: 99 Performance, 96 Accessibility, 100 Best Practices, 100 SEO](https://.png)
+![Test result: 99 Performance, 100 Accessibility, 100 Best Practices, 100 SEO](https://i.ibb.co/xqSvcV2/Screenshot-2023-10-12-at-22-51-46.png)
 
 ## Bugs resolved
 

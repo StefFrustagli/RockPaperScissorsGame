@@ -37,11 +37,10 @@ It is intended for people who want to experience a simple JavaScript game and se
 
 My goal was to create a classic 'Rock, Paper, Scissors' game where the player fights against a machine. The page design is simple, with cold colours that evoke a robotic theme.
 
-
 ### Project's goal
 The goal of this project was to put the skills I learned studying JavaScript into practice by creating a simple and fun game that would be enjoyable for casual players as well as JavaScript beginners.
 
-I can achieve my goal most effectively through this project because I can practice basic JavaScript functions while creating a simple and interactive game.
+I think I can achieve my goal effectively through this project because it gives me the opportunity to practice basic JavaScript functions while creating a simple and interactive game.
 
 ### Ideal viewers
 - A JavaScript learner who wants to see a simple game in action.
@@ -123,6 +122,7 @@ The header shows a "How to play" button that, when selected, pops up a modal lis
 
 In the modal box, the player is shown a brief list of winning conditions.
 ![Modal box with game instructions](https://i.ibb.co/rtnhM3j/Screenshot-2023-10-12-at-12-29-06.png "Modal box")
+
 At the bottom of the modal, there is a 'Play" button that allows the user to return to the main page and start the game. By hovering over the button, the font turns black.
 
 ![Play button's font turning white](https://i.ibb.co/LRc53cv/Screenshot-2023-10-12-at-12-33-44.png "Play button whose font colour turns black when hovered over")
@@ -142,8 +142,6 @@ The hand icons change according to the selections made by the player and compute
 
 Selectable options for the player are Rock, Paper and Scissors.
 ![Buttons with options: "Rock", "Paper" and "Scissors"](https://i.ibb.co/n07DxZ1/Game-area.png "Buttons with selectable options")
-
-Upon selecting the button "Rock," the Player's hand appears as follows:
 
 Upon selecting one of the buttons, the Player's hand appears as follows:
 
@@ -187,7 +185,10 @@ When the player or computer reaches 10 points, the following will appear:
 - A reset button to reset points to zero and restart the game.
 
 ![Winner message and reset button](https://i.ibb.co/c233vX9/Screenshot-2023-10-12-at-17-28-25.png "You won") 
-or ![Loser message and reset button](https://i.ibb.co/vVTBNGQ/Screenshot-2023-10-12-at-17-29-25.png "You lost")
+
+or 
+
+![Loser message and reset button](https://i.ibb.co/vVTBNGQ/Screenshot-2023-10-12-at-17-29-25.png "You lost")
 
 The **Reset button** allows the user to reset the game. The button's border turns white when hovered over. When the button is clicked, the message "You won" or "You lost" disappears and the score resets.
 
@@ -201,10 +202,10 @@ In this case, the player selects "Scissors" while the computer selects "Rock". T
 In this case, the player selects "Rock" while the computer selects "scissors". The player wins and gets a point.
 
 ![Example of a match where 10 points are reached and the player has lost](https://i.ibb.co/4jrF2yy/Screenshot-2023-10-12-at-19-07-33.png "Example of a match where 10 points are reached and player has lost")
-The computer reaches ten points first and a message informs the player that they have lost.
+In this case, the computer reaches ten points first and a message informs the player that they have lost.
 
 ![Example of a match where 10 points are reached and the player has won](https://i.ibb.co/Srptmbd/Screenshot-2023-10-12-at-19-10-44.png "Example of a match where 10 points are reached and player has won")
-The player reaches ten points first and a message informs the player that they have won.
+In this case, the player reaches ten points first and a message informs the player that they have won.
 
 ### Footer
 ![Footer with GitHub link](https://i.ibb.co/b73NHBK/Footer.png "Footer")
@@ -213,8 +214,7 @@ There is a GitHub icon in the footer that can be clicked for a link to the devel
 ### Features and general aspects left to implement
 
 Due to the short deadline and my limited knowledge, my focus was creating a functional and essential game. However, I hope to accomplish the following as I move forward: 
-- change the computer's hands into robot's hands
-- add
+- Change the computer's hands into robot's hands.
 
 ## Technologies used
 
@@ -277,7 +277,7 @@ It should be noted that all changes pushed to the main branch are automatically 
 
 ### Content
 
-This is the classic and most famous version of the game. For more info about the history of the game, please refer to [Wikipedia](https://en.wikipedia.org/wiki/Rock_paper_scissors).
+This is the classic and most famous version of the Rock, Paper and Scissors game. For more info about the history of the game, please refer to [Wikipedia](https://en.wikipedia.org/wiki/Rock_paper_scissors).
 
 ### Code
 
