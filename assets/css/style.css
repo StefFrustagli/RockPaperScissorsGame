@@ -105,6 +105,27 @@ body {
 cursor: pointer;
 }  */
 
+/* Reset button */
+  #reset-button {
+    display: none;
+        float: center;
+        background-color: #334d5c;
+        color: white;
+        border: 3px solid black;
+        margin: 0.8rem;
+        font-size: 1rem;
+        padding: 0.7rem;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        transition: 0.2s all linear;
+    }
+#reset-button:hover {
+    background-color: #1e5d88;
+        border: 3px solid white;
+        cursor: pointer;
+}
+
+
 /* Game area */
 
 .game-area {

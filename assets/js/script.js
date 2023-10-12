@@ -75,8 +75,6 @@ function getPlayerChoice() {
 }
 
 
-
-
 // Function computer turn
 function playComputerTurn() {
     const computerChoice = getComputerChoice();
@@ -115,7 +113,7 @@ function playComputerTurn() {
     }
 
     updateScore(playerScore, computerScore);
-     
+
     // Display the winner
     displayWinner();
     checkAndResetScores();
@@ -123,10 +121,10 @@ function playComputerTurn() {
 
 // Display results
 function displayWinner() {
-    if (playerScore === 9) {
+    if (playerScore === 10) {
         winnerResult.style.display = "block";
         loserResult.style.display = "none"; // Hide the loser result
-    } else if (computerScore === 9) {
+    } else if (computerScore === 10) {
         loserResult.style.display = "block";
         winnerResult.style.display = "none"; // Hide the winner result
     }
@@ -255,7 +253,7 @@ function resetScore() {
     computerScore = 0;
     updateScore(playerScore, computerScore);
     // Hide winner/loser result
-   
+
 }
 
 // Check if the player or computer score has reached 10
@@ -270,7 +268,6 @@ function checkAndResetScores() {
 
     }
 }
-
 
 // get the open button
 const howToPlayButton = document.getElementById('how-to-play');

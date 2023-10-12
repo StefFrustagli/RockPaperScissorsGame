@@ -1,14 +1,13 @@
 # Classic Rock, Paper, Scissors game
 
 ## Description
-The game I have created is a classic version of the Rock Paper Scissors game. This game is single-player only, where the user tries to beat the computer. The user will choose one of three choices and at the same time the computer makes its random choice. Randomness governs the game.
+This game is a classic version of the Rock Paper Scissors game. It is single-player only, where the user tries to beat the computer. The player will select one of three choices and at the same time the computer will make its random choice. 
+Randomness governs the game.
 
 The rules are:
 
 - Rock beats scissors; 
-
 - Scissors beat paper; 
-
 - Paper beats rock. 
 
 
@@ -16,9 +15,11 @@ It is intended for people who want to experience a simple JavaScript game and se
 
 <details><summary>Mockup of the game</summary>
 
-  <p align="center"><img src="" alt="Mockup of the game"/></br></p>
+  <p align="center"><img src="https://i.ibb.co/2gjH5kS/Mockup.png" alt="Mockup of the game"/></br></p>
   
   </details>
+
+  [Play the game here](https://steffrustagli.github.io/RockPaperScissorsGame/)
 
 ## Table of Contents
 
@@ -36,18 +37,16 @@ It is intended for people who want to experience a simple JavaScript game and se
 My goal was to create a classic 'Rock, Paper, Scissors' game where the player fights against a machine. The page design is simple, with cold colours that evoke a robotic theme.
 
 
-### Website's goals
+### Project's goal
+The goal of this project was to put the skills I learned studying JavaScript into practice by creating a simple and fun game that would be enjoyable for casual players as well as JavaScript beginners.
 
-
-
-### I can achieve my goal most effectively through this website because
-
-
+I can achieve my goal most effectively through this project because I can practice basic JavaScript functions while creating a simple and interactive game.
 
 ### Ideal viewers
 - A JavaScript learner who wants to see a simple game in action.
 - A Rock, Paper, Scissors game enthusiast.
 - Someone who wants to distract themselves from daily tasks by playing an online game.
+- Someone who's got a basic knowledge of English, as the options are in English.
   
 ### User stories
 
@@ -57,22 +56,22 @@ My goal was to create a classic 'Rock, Paper, Scissors' game where the player fi
 - I want to look at a game and see if I'm able to understand how it works and build a similar version.
 
 #### Rock, paper, scissors game enthusiasts:
-- I want to play a classic game version.
+- I want to play a classic version of the Rock, paper and scissors game.
 - I like the idea of competing against a robot.
 - I like the game design and want to try this version of the game.
 
-#### Random players:
+#### Casual players:
 - I want to spend a few minutes distracting yourself from routine tasks.
 - I want to play an online game that doesn't require too much concentration.
 - I want to play an online game against a chance-dominated computer and test my luck.
 
 #### What the user might expect:
-- To understand the game's rules.
+- To understand the game's rules easily.
 - To see the score counters.
-- To see the computer's choice.
+- To see hands with both choices.
 
 #### As a developer, I expect:
-- To provide easy and logical navigation within the game.
+- To provide an easy and logical navigation within the game.
 - To make the game as clear and simple to play as possible.
 - To provide clear instructions.
 - To provide some fun with a chance game.
@@ -97,8 +96,6 @@ The colour palette was generated from the hero image using [color-hex](https://w
 
 ![Colour palette](https://i.ibb.co/16zdc66/Colour-Palette.png "Colour palette")
 
-
-
 ### Typography
 
 The entire website uses the "Roboto Mono" font, with monospace serving as the fallback font in case the font isn't imported properly.
@@ -113,19 +110,28 @@ I chose an image of a robot that represents the machine the player attempts to b
 ![Robot favicon as appears in the tab](https://i.ibb.co/rG55bZ3/Screenshot-2023-10-10-at-20-49-56.png "Favicon")
 
 ## Features
-
-### Homepage / main page
-
-
 ### Existing Features
+### Game page
+It consists of a header, a main game area and a footer.
 
+#### Header
+The header shows a "How to play" button that, when selected, pops up a modal listing the simple rules of the game.
 
+#### Game area
+The game area shows: 
+- The heading: "Can you beat the machine?"; 
+- The player's hand (green) and the computer's hand (blue) facing each other;
+- The buttons with three options: "Rock", "Paper", "Scissors";
+- The player's score and the computer's score.
+
+### Footer
+There is a GitHub icon in the footer that can be clicked for a link to the developer's GitHub page.
 
 
 
 ### Features and general aspects left to implement
 
-Due to the short deadline and my limited knowledge, my focus was creating a functional and essential website. However, I hope to accomplish the following as I move forward:
+Due to the short deadline and my limited knowledge, my focus was creating a functional and essential game. However, I hope to accomplish the following as I move forward:
 
 - 
 
@@ -168,13 +174,7 @@ It was deployed directly from the master branch to GitHub Pages using the follow
 
 6. Click the **Arrow-up-right-from-square icon** to see the live site.
 
-The live link can be found here: 
-
-
-
-
-
-
+The live link can be found here: https://steffrustagli.github.io/RockPaperScissorsGame/
 
 ### How to run this project locally
 
