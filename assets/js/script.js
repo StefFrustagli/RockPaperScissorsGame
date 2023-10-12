@@ -256,16 +256,27 @@ function resetScore() {
 
 }
 
+const resetButton = document.getElementById('reset-button');
+
+// Event listener for reset button
+
+resetButton.addEventListener('click', function(){
+    resetScore();
+    resetButton.style.display = "none";
+})
+
+
 // Check if the player or computer score has reached 10
 function checkAndResetScores() {
     if (playerScore === 10 || computerScore === 10) {
         // If either player or computer score reaches 10, reset both scores to 0
-        playerScore = 0;
-        computerScore = 0;
-        resetScore();
-        winnerResult.style.display = "none";
-        loserResult.style.display = "none";
-
+        //playerScore = 0;
+        //computerScore = 0;
+       
+       winnerResult.style.display = "none";
+       loserResult.style.display = "none";
+      // To make the button appear in the center
+       resetButton.style.display = "inline-block";
     }
 }
 

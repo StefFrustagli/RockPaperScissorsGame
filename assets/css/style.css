@@ -107,6 +107,9 @@ cursor: pointer;
 
 /* Reset button */
   #reset-button {
+    display: flexi;
+    align-items: center;
+    margin: auto;
     display: none;
         float: center;
         background-color: #334d5c;
