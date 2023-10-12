@@ -162,11 +162,17 @@ Scissors:
 Once the player selects an option, the computer will make a random choice.
 The computer has the same options as the player:
 
-Rock:
+Rock: 
+
+![Computer's hand: rock](https://i.ibb.co/F60cykN/Screenshot-2023-10-12-at-18-58-58.png "Computer's hand: rock")
 
 Paper:
 
+![Computer's hand: paper](https://i.ibb.co/mR98wwN/Screenshot-2023-10-12-at-19-00-05.png "Computer's hand: paper")
+
 Scissors:
+
+![Computer's hand: scissors](https://i.ibb.co/NFjkrwW/Screenshot-2023-10-12-at-18-59-18.png "Computer's hand: scissors")
 
 **Match points**
 ![Match points](https://i.ibb.co/9bvWZR0/Screenshot-2023-10-12-at-17-05-22.png "Your score: 0; PC score: 0.")
@@ -193,6 +199,11 @@ In this case, the player selects "Scissors" while the computer selects "Rock". T
 ![Example of a match where player wins and gets 1 point](https://i.ibb.co/nLsQvhL/Screenshot-2023-10-12-at-17-26-55.png "Example of a match where player wins and gets 1 point")
 In this case, the player selects "Rock" while the computer selects "scissors". The player wins and gets a point.
 
+![Example of a match where 10 points are reached and the player has lost](https://i.ibb.co/4jrF2yy/Screenshot-2023-10-12-at-19-07-33.png "Example of a match where 10 points are reached and player has lost")
+The computer reaches ten points first and a message informs the player that they have lost.
+
+![Example of a match where 10 points are reached and the player has won](https://i.ibb.co/Srptmbd/Screenshot-2023-10-12-at-19-10-44.png "Example of a match where 10 points are reached and player has won")
+The player reaches ten points first and a message informs the player that they have won.
 
 ### Footer
 ![Footer with GitHub link](https://i.ibb.co/b73NHBK/Footer.png "Footer")
@@ -265,14 +276,16 @@ It should be noted that all changes pushed to the main branch are automatically 
 
 ### Content
 
-
+This is the classic and most famous version of the game. For more info about the history of the game, please refer to [Wikipedia](https://en.wikipedia.org/wiki/Rock_paper_scissors).
 
 ### Code
 
-As this is my first time building a game with JavaScript, it has been extremelly challenging. My initial steps were largely guided by YouTube videos. In particular the following:
+As this was my first time building a game with JavaScript, I must say that it has been extremely challenging. My initial steps were largely guided by videos online. In particular, I've found inspiration watching YouTube videos by [Code Grind](https://youtu.be/NTDBKgBY6JU?si=JvBJ4kWI1syJEjou) and [FreeCodeCamp](https://youtu.be/jaVNP3nIAv0?si=b31LTH54UzufIY4Y). The first video helped me with the handshake function and the general idea of the game, while the second gave me an insight into how to create a tidy set up for a JS project.
 
-
+In general, I examined and researched different codes online.
+For guidance, I've often checked out
+[W3Schools](https://www.w3schools.com/).
 
 ### Acknowledgment
 
-For their continuous support, suggestions and feedback, I am very grateful to my mentor Brian Macharia, the Code Institute tutors, and my fellow classmates on Slack, in particular Niclas for his precious help.
+For their continuous support, suggestions and feedback, I am very grateful to my mentor Brian Macharia, the Code Institute tutors, and my fellow classmates on Slack, in particular I want to thank Niclas for his precious help and support.
