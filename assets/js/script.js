@@ -263,6 +263,8 @@ const resetButton = document.getElementById('reset-button');
 resetButton.addEventListener('click', function(){
     resetScore();
     resetButton.style.display = "none";
+    winnerResult.style.display = "none";
+    loserResult.style.display = "none";
 })
 
 
@@ -272,9 +274,9 @@ function checkAndResetScores() {
         // If either player or computer score reaches 10, reset both scores to 0
         //playerScore = 0;
         //computerScore = 0;
-       
-       winnerResult.style.display = "none";
-       loserResult.style.display = "none";
+        displayWinner();
+       //winnerResult.style.display = "none";
+       //loserResult.style.display = "none";
       // To make the button appear in the center
        resetButton.style.display = "inline-block";
     }
