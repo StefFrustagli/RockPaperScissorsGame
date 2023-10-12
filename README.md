@@ -1,4 +1,5 @@
-# CLASSIC ROCK, PAPER, SCISSORS GAME
+# CLASSIC ROCK, PAPER, SCISSORS GAME 
+by Stefania Frustagli
 
 ## Description
 This game is a classic version of the Rock Paper Scissors game. It is single-player only, where the user tries to beat the computer. The player will select one of three choices and at the same time the computer will make its random choice. 
