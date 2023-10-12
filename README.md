@@ -115,7 +115,16 @@ I chose an image of a robot that represents the machine the player attempts to b
 It consists of a header, a main game area and a footer.
 
 #### Header
-The header shows a "How to play" button that, when selected, pops up a modal listing the simple rules of the game.
+![Header with How to play button](https://i.ibb.co/qCwbgTT/HEADER.png "Header")
+The header shows a "How to play" button that, when selected, pops up a modal listing the simple rules of the game. When hovered over, the button's border turns white.
+
+![Button's borders turn white when the button is hovered over](https://i.ibb.co/NxtpJxc/How-to-play-button.png "How to play button's white border")
+
+In the modal box, the player is shown a brief list of winning conditions.
+![Modal box with game instructions](https://i.ibb.co/rtnhM3j/Screenshot-2023-10-12-at-12-29-06.png "Modal box")
+At the bottom of the modal, there is a 'Play" button that allows the user to return to the main page and start the game. By hovering over the button, the font turns black.
+
+![Play button's font turning white](https://i.ibb.co/LRc53cv/Screenshot-2023-10-12-at-12-33-44.png "Play button whose font colour turns black when hovered over")
 
 #### Game area
 The game area shows: 
@@ -123,8 +132,24 @@ The game area shows:
 - The player's hand (green) and the computer's hand (blue) facing each other;
 - The buttons with three options: "Rock", "Paper", "Scissors";
 - The player's score and the computer's score.
+  
+![Game area that includes heading, icons, options and score](https://i.ibb.co/n07DxZ1/Game-area.png "Game area")
+
+The initial situation in the game shows the two hands facing each others (as image above).
+
+The hand icons change according to the selections made by the player and computer when a button is clicked.
+
+Selectable options for the player are Rock, Paper and Scissors.
+
+Rock:
+
+Paper:
+
+Scissors:
+
 
 ### Footer
+![Footer with GitHub link](https://i.ibb.co/b73NHBK/Footer.png "Footer")
 There is a GitHub icon in the footer that can be clicked for a link to the developer's GitHub page.
 
 
