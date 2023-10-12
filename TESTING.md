@@ -83,8 +83,32 @@ The result, with a desktop setup, was the following:
 
 ## Bugs resolved
 
+The development of this game has been challenging for me because I am a beginner, lack experience and JavaScript is a new world for me. 
+
+- Most of the minor bugs were fixed by correcting typos and checking the correct elements to target using console.log.
+
+- The direction of the hands caused me the most stress out of all the bugs I encountered. My goal was to have both hands (the player's and the computer's) facing each other. Instead, the scissors' hands were facing down, because they took over rotation from the other hands. This was fixed by adding the following if/else condition to the getPlayerChoice function:
+
+```
+if (choiceMapping[choiceClass] === 'scissors') {
+
+ document.getElementsByClassName('player-hand')[0].style.transform = "rotate(0deg)";
+
+return choiceMapping[choiceClass];
+
+ } else {
+
+document.getElementsByClassName('player-hand')[0].style.transform = "rotate(90deg)";
+
+return choiceMapping[choiceClass];
+
+ }
+
+```
+
+- The other major bug was the score resetting system. At first, I wanted the score to reset automatically when the user or computer reached 10 points. The reset was happening too fast and the message "You won" or "You lost" that happened before wasn't visible to the human eye, so my mentor suggested adding a reset button.
 
   
 ## Future improvements
 
-- Performance on mobile devices is something I would like to improve going forward.
+- Hands performance is something I would like to improve going forward.
