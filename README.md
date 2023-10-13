@@ -93,7 +93,8 @@ Below are the wireframes I created during the design process (whose aspect and c
 
 ### Palette
 
-The colour palette was generated from the hero image using [color-hex](https://www.color-hex.com/). As I said, I wanted some colors that evoke the image of a robot.
+The colour palette was generated from the hero image using [color-hex](https://www.color-hex.com/). 
+As I said, I wanted some colors that evoke the image of a robot.
 
 ![Colour palette](https://i.ibb.co/16zdc66/Colour-Palette.png "Colour palette")
 
@@ -143,7 +144,7 @@ The hand icons change according to the selections made by the player and compute
 
 Selectable options for the player are Rock, Paper and Scissors.
 
-![Buttons with options: "Rock", "Paper" and "Scissors"](https://i.ibb.co/n07DxZ1/Game-area.png "Buttons with selectable options")
+![Buttons with options: "Rock", "Paper" and "Scissors"](https://i.ibb.co/VmGkXyW/Screenshot-2023-10-13-at-09-29-54.png "Buttons with selectable options")
 
 Upon selecting one of the buttons, the Player's hand appears as follows:
 

@@ -16,15 +16,13 @@ const resetButton = document.getElementById('reset-button');
 // Variables for results 
 let winnerResult = document.getElementById("winner-result");
 let loserResult = document.getElementById("loser-result");
-
 // Variable for the open button
 const howToPlayButton = document.getElementById('how-to-play');
 // Variable for the modal box
 const modalContainer = document.getElementById('container');
 // Variable for the closing button
 const closeModal = document.getElementById('close-modal');
-
-// Get the button to recognise the choices
+// Variables for choice Mapping
 const choiceMapping = {
     "fa-hand-back-fist": "rock",
     "fa-hand": "paper",
@@ -47,14 +45,14 @@ options.forEach((option) => {
         }, 900); // Make movement smooth
     });
 });
-// Function computer random choice
+// Function computer's random choice
 function getComputerChoice() {
     const choices = ["rock", "paper", "scissors"]; // they were computer's hands IDs, now changed into "rock" "paper", "scissors" to fix issue with score
     let randomNumber = Math.floor(Math.random() * 3); // making sure only 0, 1 or 2 can be selected
     let computerChoice = choices[randomNumber];
     return computerChoice;
 }
-
+// Function player's choice
 function getPlayerChoice() {
     const icon = player.firstElementChild;
     const choiceClass = Array.from(icon.classList).find((className) => {
@@ -68,7 +66,7 @@ function getPlayerChoice() {
         return choiceMapping[choiceClass];
     }
 }
-// Function computer turn
+// Function computer's turn
 function playComputerTurn() {
     const computerChoice = getComputerChoice();
     const playerChoice = getPlayerChoice();
@@ -78,7 +76,7 @@ function playComputerTurn() {
         "fa-hand-back-fist",
         "fa-hand-scissors"
     );
-    // If condition for Computer choice
+    // If condition for Computer's choice
     if (computerChoice === "rock") {
         icon.classList.add("fa-hand-back-fist");
         icon.classList.add('fa-rotate-270'); // To fix scissors' hand
@@ -213,13 +211,12 @@ function checkAndResetScores() {
     }
 }
 
-
 // MODAL - HowToPlayButton with instructions for the game (code adapted from W3Schools)
 // Open modal when clicking on button 
 howToPlayButton.onclick = function () {
     modalContainer.style.display = "block";
 };
-// Close modal clicking on button
+// Close modal when clicking on button
 closeModal.onclick = function () {
     modalContainer.style.display = "none";
 };

@@ -125,6 +125,19 @@ body {
 }
 
 /* Hands */
+.hands {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    border-left: 2rem;
+    border-right: 2rem;
+}
+
 .player-hand-scissors {
     font-size: 9rem;
     color: #55ad7a;
@@ -170,19 +183,6 @@ body {
     animation: shakeComputer 0.9s linear;
 }
 
-.hands {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    padding-bottom: 3rem;
-    padding-top: 2rem;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    border-left: 2rem;
-    border-right: 2rem;
-}
-
 /* Other hands icons (hidden in HTML) */
 .hide {
     display: none !important;
@@ -204,13 +204,13 @@ body {
     color: #55ad7a;
 }
 
-.transform {
-    transform: rotateY(180deg);
-}
-
 .hidden-hand-scissors-computer {
     font-size: 9rem;
     color: #1e5d88;
+}
+
+.transform {
+    transform: rotateY(180deg);
 }
 
 /* Options */
@@ -237,6 +237,7 @@ body {
 }
 
 /* Animation for shaking hands (thanks to Code Grind) */
+
 /* Shake player's hand */
 @keyframes shakePlayer {
     0% {
@@ -408,6 +409,22 @@ footer {
     }
 
     /* Modal for mobiles */
+    #reset-button {
+        align-items: center;
+        margin: auto;
+        display: none;
+        background-color: #334d5c;
+        color: white;
+        border: 3px solid black;
+        margin: 0.8rem;
+        font-size: 1rem;
+        padding: 0.2rem;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        transition: 0.2s all linear;
+        margin: 0;
+    }
+
     .modal {
         position: fixed;
         z-index: 1;
@@ -432,22 +449,6 @@ footer {
     }
 
     .scores {
-        margin: 0;
-    }
-
-    #reset-button {
-        align-items: center;
-        margin: auto;
-        display: none;
-        background-color: #334d5c;
-        color: white;
-        border: 3px solid black;
-        margin: 0.8rem;
-        font-size: 1rem;
-        padding: 0.2rem;
-        border-radius: 0.5rem;
-        cursor: pointer;
-        transition: 0.2s all linear;
         margin: 0;
     }
 }
