@@ -20,6 +20,10 @@ In conclusion, the message returned no errors.
 
 No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator.html.en).
 
+### JS
+
+[JSHint](https://jshint.com/) was used to validate the JavaScript with no errors highlighted.
+
 ## Manual testing
 
 | **To be tested**               | **Test Action**                                                                                       | **Expected Outcome**                                                                                   | **Test Outcome** |
@@ -58,6 +62,8 @@ Below are the browsers that have been tested:
 ## Responsiveness
 
 I tested the website on a variety of screen sizes from iPhone 5 (320px wide) to a 5K iMac Pro (5120 x 2880 px) and it appears to be responsive on all of them.
+
+A media query was added to make sure the game displays correctly on mobile devices.
 
 ## Lighthouse test
 
@@ -106,7 +112,7 @@ return choiceMapping[choiceClass];
 
 ```
 
-- The other major bug was the score resetting system. At first, I wanted the score to reset automatically when the user or computer reached 10 points. The reset was happening too fast and the message "You won" or "You lost" that happened before wasn't visible to the human eye, so my mentor suggested adding a reset button.
+- The other major bug was the score resetting system. At first, I wanted the score to reset automatically when the user or computer reached 10 points. But the reset was happening too fast and the message "You won" or "You lost" that happened before wasn't visible to the human eye, so my mentor suggested adding a reset button.
 
   
 ## Future improvements
