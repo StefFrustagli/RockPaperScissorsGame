@@ -89,12 +89,6 @@ body {
     cursor: pointer;
 }
 
-/*
-#close-modal:hover {
-    background-color: #55ad7a;
-    border: 3px solid #334d5c;
-cursor: pointer;
-}  */
 /* Reset button */
 #reset-button {
     align-items: center;
@@ -144,7 +138,6 @@ cursor: pointer;
     font-size: 9rem;
     color: #55ad7a;
     transform: rotate(90deg);
-    /* Always face the specified direction */
 }
 
 .player-hand-rock {
@@ -204,13 +197,11 @@ cursor: pointer;
 .hidden-hands-computer {
     font-size: 9rem;
     color: #1e5d88;
-    /*transform: rotate(270deg);*/
 }
 
 .hidden-hand-scissors-player {
     font-size: 9rem;
     color: #55ad7a;
-    /*transform: rotateY(180deg);*/
 }
 
 .transform {
