@@ -9,7 +9,7 @@ let scissorsButton = document.getElementById("button-scissors");
 // Variables for scores
 let playerScore = 0;
 let computerScore = 0;
-let playerScore_span = document.getElementById("player-score"); 
+let playerScore_span = document.getElementById("player-score");
 let computerScore_span = document.getElementById("computer-score");
 // Variables for Reset button
 const resetButton = document.getElementById('reset-button');
@@ -200,7 +200,7 @@ resetButton.addEventListener('click', function () {
 function checkAndResetScores() {
     if (playerScore === 10 || computerScore === 10) {
         // If either player or computer score reaches 10, reset both scores to 0
-       displayWinner();
+        displayWinner();
         // To make the button appear in the center
         resetButton.style.display = "inline-block";
     }

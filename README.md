@@ -11,8 +11,9 @@ The rules are:
 - Scissors beat paper; 
 - Paper beats rock. 
 
+Upon reaching 10 points, the game ends, and it is communicated whether the player won or lost. The game can then be restarted.
 
-It is intended for people who want to experience a simple JavaScript game and see how it works.
+The site is intended for people who want to experience a simple game or for JavaScript learners.
 
 <details><summary>Mockup of the game</summary>
 
@@ -109,7 +110,7 @@ I chose an image of a robot that represents the machine the player attempts to b
 
 ![Robot favicon as appears in the tab](https://i.ibb.co/rG55bZ3/Screenshot-2023-10-10-at-20-49-56.png "Favicon")
 
-## Features
+## Features & Game functionalities
 ### Existing Features
 ### Game page
 It consists of a header, a main game area and a footer.
@@ -141,6 +142,7 @@ The initial situation in the game shows the two hands facing each others (as ima
 The hand icons change according to the selections made by the player and computer when a button is clicked.
 
 Selectable options for the player are Rock, Paper and Scissors.
+
 ![Buttons with options: "Rock", "Paper" and "Scissors"](https://i.ibb.co/n07DxZ1/Game-area.png "Buttons with selectable options")
 
 Upon selecting one of the buttons, the Player's hand appears as follows:
@@ -173,7 +175,12 @@ Scissors:
 
 ![Computer's hand: scissors](https://i.ibb.co/NFjkrwW/Screenshot-2023-10-12-at-18-59-18.png "Computer's hand: scissors")
 
+**Hand shaking**
+
+When a button is clicked, both hands shake. Through shaking, the computer's hand remains in the same position, while the player's hand faces up and then toward the computer.
+
 **Match points**
+
 ![Match points](https://i.ibb.co/9bvWZR0/Screenshot-2023-10-12-at-17-05-22.png "Your score: 0; PC score: 0.")
 
 Match points are updated every time a match takes place. The winning conditions are: rock wins against scissors; paper wins against rock; and scissors win against paper. If both players throw the same hand signal, neither gets a point.
@@ -196,25 +203,32 @@ The **Reset button** allows the user to reset the game. The button's border turn
 Examples of matches:
 
 ![Example of a match where computer wins and gets 1 point](https://i.ibb.co/tbjdkfQ/Scissors.png  "Example of a match where computer wins and gets 1 point")
+
 In this case, the player selects "Scissors" while the computer selects "Rock". The computer wins and gets a point.
 
 ![Example of a match where player wins and gets 1 point](https://i.ibb.co/nLsQvhL/Screenshot-2023-10-12-at-17-26-55.png "Example of a match where player wins and gets 1 point")
+
 In this case, the player selects "Rock" while the computer selects "scissors". The player wins and gets a point.
 
 ![Example of a match where 10 points are reached and the player has lost](https://i.ibb.co/4jrF2yy/Screenshot-2023-10-12-at-19-07-33.png "Example of a match where 10 points are reached and player has lost")
+
 In this case, the computer reaches ten points first and a message informs the player that they have lost.
 
 ![Example of a match where 10 points are reached and the player has won](https://i.ibb.co/Srptmbd/Screenshot-2023-10-12-at-19-10-44.png "Example of a match where 10 points are reached and player has won")
+
 In this case, the player reaches ten points first and a message informs the player that they have won.
 
 ### Footer
 ![Footer with GitHub link](https://i.ibb.co/b73NHBK/Footer.png "Footer")
+
 There is a GitHub icon in the footer that can be clicked for a link to the developer's GitHub page.
 
 ### Features and general aspects left to implement
 
 Due to the short deadline and my limited knowledge, my focus was creating a functional and essential game. However, I hope to accomplish the following as I move forward: 
+- Improve the animation of the hands.
 - Change the computer's hands into robot's hands.
+  
 
 ## Technologies used
 
