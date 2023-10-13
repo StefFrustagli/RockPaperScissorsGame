@@ -17,7 +17,14 @@ const resetButton = document.getElementById('reset-button');
 let winnerResult = document.getElementById("winner-result");
 let loserResult = document.getElementById("loser-result");
 
-// get the open button to recognise the choices
+// Variable for the open button
+const howToPlayButton = document.getElementById('how-to-play');
+// Variable for the modal box
+const modalContainer = document.getElementById('container');
+// Variable for the closing button
+const closeModal = document.getElementById('close-modal');
+
+// Get the button to recognise the choices
 const choiceMapping = {
     "fa-hand-back-fist": "rock",
     "fa-hand": "paper",
@@ -205,13 +212,9 @@ function checkAndResetScores() {
         resetButton.style.display = "inline-block";
     }
 }
-// get the open button
-const howToPlayButton = document.getElementById('how-to-play');
-// get the modal
-const modalContainer = document.getElementById('container');
-// get the closing button
-const closeModal = document.getElementById('close-modal');
-// MODAL - How to play button with instructions for the game (code adapted from W3Schools)
+
+
+// MODAL - HowToPlayButton with instructions for the game (code adapted from W3Schools)
 // Open modal when clicking on button 
 howToPlayButton.onclick = function () {
     modalContainer.style.display = "block";
