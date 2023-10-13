@@ -14,6 +14,7 @@ The [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institut
 **How I fixed this**: I have added some hidden headings in the sections.
 
 In conclusion, the message returned no errors.
+
 ![Document checking completed. No errors or warnings to show.](https://i.ibb.co/hddrgq4/Screenshot-2023-08-29-at-20-38-56.png "Document checking completed")
 
 ### CSS
